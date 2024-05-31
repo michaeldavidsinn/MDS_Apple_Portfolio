@@ -1,0 +1,18 @@
+[
+  {
+    "role": "Mentoring Department",
+    "organisation": "Outside Tech",
+    "startDate": "16 June 2023",
+    "endDate": "Present",
+    "experiences": ["Adapting new IMT students into new university lifestyle", "Has "],
+    "imageSrc": "history/google.png"
+  },
+    {
+      "role": "Hackfest 2024",
+      "organisation": "",
+      "startDate": "Sept, 2022",
+      "endDate": "Present",
+      "experiences": ["Hackfest Participant", "Creating Web Database and Front-End"],
+      "imageSrc": "history/google.png"
+    }
+  ]
