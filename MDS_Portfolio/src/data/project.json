@@ -3,30 +3,22 @@
     "title": "ALP WebDev",
     "imageSrc": "projects/project_alpwebdev.png",
     "description": "ALP project for subject Web Development in Semester 4 that was created to support my family business in Balikpapan",
-    "skills": ["HTML", "PHP", "MySQL"],
+    "skills": ["HTML", "PHP", "MySQL", "CSS"],
     "detail": "https://drive.google.com/drive/folders/1PNBr-QixqxiHprtiPPh75RUUBmouQReJ?usp=share_link",
     "source": "https://github.com/michaeldavidsinn/ALP_Web-Development.git"
   },
   {
     "title": "EduLiving",
-    "imageSrc": "projects/project.png",
-    "description": "During my time being a participant of Hackfest 2024 with my teammates, we created a website to supports Kebun Binatang Surabaya by creating a game-quiz that will get you new animal stored in your collection if you win, this will help visitors to kill their boredom at the zoo",
-    "skills": ["HTML", "PHP", "MySQL"],
+    "imageSrc": "projects/project_eduliving.png",
+    "description": "We created a website to supports Kebun Binatang Surabaya by creating a game-quiz that will get you new animal stored in your collection if you win",
+    "skills": ["HTML", "PHP", "MySQL", "CSS"],
     "detail": "https://drive.google.com/drive/folders/1ZLXP0QKclDdJrm3qHjg0fhMwHY7w-OnW?usp=share_link",
     "source": "https://github.com/jhwrwe/11_Mana-KPKu_EduLiving.git"
   },
   {
-    "title": "Fooderation",
-    "imageSrc": "projects/project.png",
-    "description": "I created a java-based app with its figma design called Fooderation that helps to solve people calories problem by mainting healthy lifestyle such as health food and exercises",
-    "skills": ["Java"],
-    "detail": "https://drive.google.com/drive/folders/17NQLat0iKl0_VqZ7eyttEo-ncSw48JaA?usp=share_link",
-    "source": "https://github.com/michaeldavidsinn/Fooderation.git"
-  },
-  {
     "title": "GreenThumb",
-    "imageSrc": "projects/project.png",
-    "description": "This is an ongoing project for ALP in Mobile Application Development subject which we build a swift-based app to support green-lifestyle by controlling various of plants that has been added and creating the watering time etc.",
+    "imageSrc": "projects/project_greenthumb.png",
+    "description": "This is an ongoing project for ALP in Mobile Application Development subject which we build a swift-based app to support green-lifestyle",
     "skills": ["Swift"],
     "detail": "https://drive.google.com/drive/folders/1YN3gOyTnKhIZT4n0WeDFLSl59pqQMs19?usp=share_link",
     "source": "https://github.com/LouisSetyandaru/GreenThumb.git"
@@ -34,17 +26,17 @@
   {
     "title": "DigPro",
     "imageSrc": "projects/project_digpro.png",
-    "description": "We build a well designed content creator website that supports UMKM or other business in Indonesia, this is also an ongoing project for Digital Entrepreneurship Innovation subject",
-    "skills": ["HTML", "PHP", "MySQL"],
+    "description": "We build a well designed content creator website that supports UMKM or other business in Indonesia",
+    "skills": ["HTML", "PHP", "MySQL", "CSS"],
     "detail": "https://drive.google.com/drive/folders/14s2OoGm_wZLkg0dkNWmtZNIFKHO6JrNz?usp=share_link",
     "source": "https://github.com/LouisSetyandaru/Web_DEI.git"
   },
   {
-    "title": "DeSauge",
-    "imageSrc": "projects/project.png",
-    "description": "I build a website for a specific client that has a mushroom-based sausages business, this website contains many aspects every web has and a rich design of CSS",
-    "skills": ["HTML", "CSS"],
-    "detail": "https://drive.google.com/drive/folders/14s2OoGm_wZLkg0dkNWmtZNIFKHO6JrNz?usp=share_link",
-    "source": "https://github.com/LouisSetyandaru/Web_DEI.git"
+    "title": "De Sauge",
+    "imageSrc": "projects/project_desauge.png",
+    "description": "Although without database,i made a website from templates downloaded from envato and manage to make it work as an actual website for my client",
+    "skills": ["HTML", "CSS", "JavaScript"],
+    "detail": "https://drive.google.com/drive/folders/1ESkHSPlFtcOGDXd3EK4Y0dCIp1L4bphQ?usp=share_link",
+    "source": "https://github.com/michaeldavidsinn/desauge.git"
   }
 ]

@@ -4,15 +4,15 @@
     "organisation": "Outside Tech",
     "startDate": "16 June 2023",
     "endDate": "Present",
-    "experiences": ["Adapting new IMT students into new university lifestyle", "Has "],
-    "imageSrc": "history/google.png"
+    "experiences": ["Adapting new IMT students into new university lifestyle", "I have been a koor of event organization during 'bonding jurusan' evemt"],
+    "imageSrc": "history/mentoring.png"
   },
     {
       "role": "Hackfest 2024",
       "organisation": "",
-      "startDate": "Sept, 2022",
-      "endDate": "Present",
+      "startDate": "26 April 2024",
+      "endDate": "28 April 2024",
       "experiences": ["Hackfest Participant", "Creating Web Database and Front-End"],
-      "imageSrc": "history/google.png"
+      "imageSrc": "history/hackfesting.png"
     }
   ]
