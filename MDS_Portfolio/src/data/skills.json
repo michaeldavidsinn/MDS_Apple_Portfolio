@@ -25,7 +25,7 @@
   },
   {
     "title": "Swift",
-    "imageSrc": "skills/html.png"
+    "imageSrc": "skills/swift.png"
   },
   {
     "title": "Python",
@@ -38,5 +38,13 @@
   {
     "title": "JavaScript",
     "imageSrc": "skills/js.png"
+  },
+  {
+    "title": "Dart",
+    "imageSrc": "skills/dart.png"
+  },
+  {
+    "title": "MATLAB",
+    "imageSrc": "skills/MATLAB.png"
   }
 ]

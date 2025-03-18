@@ -38,5 +38,21 @@
     "skills": ["HTML", "CSS", "JavaScript"],
     "detail": "https://drive.google.com/drive/folders/1ESkHSPlFtcOGDXd3EK4Y0dCIp1L4bphQ?usp=share_link",
     "source": "https://github.com/michaeldavidsinn/desauge.git"
+  },
+  {
+    "title": "BikeFlow",
+    "imageSrc": "projects/project_bikeflow.png",
+    "description": "Developed a time series AI model to predict daily bike usage based on environmental factors. Led AI development, backend, and frontend integration in a three-member team.",
+    "skills": ["HTML", "CSS", "JavaScript", "Python"],
+    "detail": "https://drive.google.com/file/d/1oW64G09EoZYtI_nBrPq6L-rSJLlt3ylz/view?usp=sharing",
+    "source": "https://github.com/ImiaFeder/bikeShare.git"
+  },
+  {
+    "title": "YuccaGPT",
+    "imageSrc": "projects/project_yuccagpt.png",
+    "description": "Developed an AI-powered text-to-speech system for Universitas Ciputra Surabaya using Python and Google Cloud. Handled backend, frontend, and AI integration.",
+    "skills": ["React", "CSS", "JavaScript", "Python"],
+    "detail": "https://drive.google.com/file/d/1dav3kb4Fujt0BUMeGk0OV3bSqKa_uZSV/view?usp=share_link",
+    "source": "https://github.com/NiCS16/yucca_ai_alp.git"
   }
 ]

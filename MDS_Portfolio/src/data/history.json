@@ -14,5 +14,13 @@
       "endDate": "28 April 2024",
       "experiences": ["Hackfest Participant", "Creating Web Database and Front-End"],
       "imageSrc": "history/hackfesting.png"
+    },
+    {
+      "role": "Foy Clinic",
+      "organisation": "Outside Tech",
+      "startDate": "1 June 2024",
+      "endDate": "Present",
+      "experiences": ["Data analytics for social media", "Content creator"],
+      "imageSrc": "history/foy.png"
     }
   ]

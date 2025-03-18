@@ -50,7 +50,7 @@ export const About = () => {
                     <li className = {styles.aboutItem}>
                         <img src = {getImageurl("about/serverIcon.png")} alt = "cursor Icon"/>
                         <div className = {styles.aboutItemText}>
-                            <p>  I'm a frontend developer with experience in building responsive and optimized sites, also I have experience developing fast and optimised back-end systems and APIs</p>
+                            <p>  I'm a fullstack & AI developer with experience in building responsive and optimized sites & developing a well-built AI, and an experience of developing fast and optimised back-end systems and APIs</p>
                         </div>
                     </li>
                  </ul>
