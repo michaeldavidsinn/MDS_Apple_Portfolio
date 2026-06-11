@@ -1,26 +1,51 @@
-@import "../../vars.css";
-
+/* Styling Container Utama */
 .container {
-    margin-top: 76px;
-    color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
+  padding: 6rem 10%;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+/* Bagian Header (Judul & Subjudul) */
+.header {
+  margin-bottom: 3.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #a0aab2;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* 
+  Grid Layout Modern
+  Menggantikan flex-wrap agar kartu-kartu presisi seperti Bento Box
+*/
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2.5rem;
+  width: 100%;
+}
+
+/* Responsivitas untuk Tablet & Mobile */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 4rem 5%;
   }
   
-  .title {
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
+  .projectsGrid {
+    /* Di layar kecil (HP), paksa menjadi 1 kolom penuh */
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
-  
-  .projects {
-    margin-top: 37px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-    width: 100%;
-  }
+}

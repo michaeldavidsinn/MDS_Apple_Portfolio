@@ -1,12 +1,20 @@
 * {
-
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Outfit", Arial, Helvetica, sans-serif;
+  color: #ffffff; /* Mengubah semua warna teks di website menjadi putih secara global */
 }
 
 html {
-
   scroll-behavior: smooth;
+  font-size: 18px;
+  background-color: #0B132B; /* Memastikan background global gelap agar teks putih terlihat jelas */
+}
+
+/* Jika ingin teks otomatis membesar lagi di layar laptop/desktop */
+@media screen and (min-width: 1024px) {
+  html {
+    font-size: 20px; 
+  }
 }

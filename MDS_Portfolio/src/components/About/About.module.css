@@ -1,99 +1,163 @@
-@import "../../vars.css";
-
+/* Styling Container Utama */
 .container {
-  position: relative;
-  background-color: rgba(12, 12, 12, 0.6);
-  border-radius: 15px;
-  padding: 73px;
-  margin-top: 129px;
-  z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding: 6rem 10%;
+  background-color: transparent;
+  color: #ffffff;
 }
 
-.title {
-  color: var(--color-text);
-  font-size: 35px;
+.sectionTitle {
+  font-size: 2.5rem;
   font-weight: 700;
-  letter-spacing: 1.75px;
+  letter-spacing: 2px;
+  margin-bottom: 3rem;
   text-transform: uppercase;
+  color: #ffffff;
 }
 
-.content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+/* Setup Bento Grid */
+.bentoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  grid-auto-rows: minmax(180px, auto);
 }
 
-.aboutImage {
-  width: 400px ;
-  height: 250px ;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  margin: 40px
-}
-
-.aboutItems {
-  color: var(--color-text);
+/* Styling Dasar Kartu */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 24px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  gap: 50px;
 }
 
-.aboutItem {
+.card:hover {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(0, 122, 255, 0.15);
+}
+
+/* Header di dalam Kartu */
+.cardHeader {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  border-radius: 20px;
-  list-style: none;
-  padding: 25px;
-  background-image: linear-gradient(
-    90deg,
-    rgba(165, 215, 232, 0.42) 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-size: 0 100%;
-  background-repeat: no-repeat;
-  transition: 0.4s;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
 }
 
-.aboutItem:hover {
-  background-size: 100% 100%;
+.icon {
+  font-size: 1.5rem;
 }
 
-.aboutItem h3 {
-  font-size: 25px;
+.cardHeader h3 {
+  font-size: 1.2rem;
   font-weight: 600;
+  color: #e2e8f0;
 }
 
-.aboutItem p {
-  font-size: 25px;
+/* Penempatan Grid (Membuat ukuran berbeda tiap kartu) */
+.bioCard {
+  grid-column: span 2;
 }
 
-@media screen and (max-width: 830px) {
-  .container {
-    background-color: transparent;
-    padding-left: 0;
-    padding-right: 0;
+.bioCard p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #a0aab2;
+}
+
+.infoCard {
+  grid-column: span 1;
+}
+
+.eduCard {
+  grid-column: span 2;
+}
+
+.orgCard {
+  grid-column: span 1;
+}
+
+/* Styling List (Untuk Info & Experience) */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list li {
+  font-size: 1rem;
+  color: #a0aab2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.list li strong {
+  color: #e2e8f0;
+}
+
+.list li span {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+/* Timeline sederhana untuk Edukasi */
+.timeline {
+  display: flex;
+  gap: 2rem;
+  margin-top: 0.5rem;
+}
+
+.timelineItem {
+  border-left: 2px solid #007aff;
+  padding-left: 1rem;
+}
+
+.timelineItem h4 {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  margin-bottom: 0.3rem;
+}
+
+.timelineItem p {
+  font-size: 0.95rem;
+  color: #a0aab2;
+}
+
+/* Responsivitas untuk Tablet & Mobile */
+@media screen and (max-width: 1024px) {
+  .bentoGrid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .bioCard, .eduCard {
+      grid-column: span 2;
+  }
+  
+  .infoCard, .orgCard {
+      grid-column: span 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bentoGrid {
+      grid-template-columns: 1fr;
+  }
+  
+  .bioCard, .infoCard, .eduCard, .orgCard {
+      grid-column: span 1;
   }
 
-  .content {
-    flex-direction: column;
-  }
-
-  .aboutImage {
-    display: none;
-  }
-
-  .aboutItems {
-    margin-top: 29px;
-  }
-
-  .aboutItem {
-    padding-left: 0;
-    padding-right: 0;
+  .timeline {
+      flex-direction: column;
+      gap: 1.5rem;
   }
 }

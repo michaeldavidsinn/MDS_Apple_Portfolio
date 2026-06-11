@@ -1,26 +1,58 @@
 [
   {
+    "role": "Coder",
+    "organisation": "Apple Developer Academy",
+    "startDate": "2 March 2026",
+    "endDate": "Present",
+    "experiences": [
+      "Developing native iOS applications using Swift and UIKit/SwiftUI ecosystems",
+      "Collaborating in cross-functional teams to solve real-world problems through Apple's Challenge Based Learning (CBL) framework",
+      "Implementing robust technical architectures and optimizing application performance"
+    ],
+    "imageSrc": "history/ADA.png"
+  },
+  {
+    "role": "Software Engineer",
+    "organisation": "WEPEKA.id",
+    "startDate": "16 September 2025",
+    "endDate": "Present",
+    "experiences": [
+      "Developing and optimizing responsive web platforms and robust back-end systems",
+      "Implementing scalable technical solutions to enhance user experience and operational efficiency"
+    ],
+    "imageSrc": "history/wepeka.png"
+  },
+  {
+    "role": "Data Analyst & Content Creator",
+    "organisation": "Foy Clinic",
+    "startDate": "1 June 2024",
+    "endDate": "Present",
+    "experiences": [
+      "Managing and executing social media data analytics to track user engagement and optimize content reach",
+      "Creating targeted digital content and marketing strategies to strengthen brand awareness"
+    ],
+    "imageSrc": "history/foy.png"
+  },
+  {
+    "role": "Hackfest Participant",
+    "organisation": "GDG Hackfest",
+    "startDate": "26 April 2024",
+    "endDate": "28 April 2024",
+    "experiences": [
+      "Competed in an intensive hackathon environment to build functional tech solutions within tight deadlines",
+      "Designed and developed the application's front-end interfaces and structured the core relational web databases"
+    ],
+    "imageSrc": "history/hackfesting.png"
+  },
+  {
     "role": "Mentoring Department",
-    "organisation": "Outside Tech",
+    "organisation": "Universitas Ciputra",
     "startDate": "16 June 2023",
     "endDate": "Present",
-    "experiences": ["Adapting new IMT students into new university lifestyle", "I have been a koor of event organization during 'bonding jurusan' evemt"],
+    "experiences": [
+      "Assisting and mentoring new Informatics Multimedia & Technology (IMT) students to adapt to university-level academic and tech environments",
+      "Served as the Event Coordinator for major departmental bonding and networking events"
+    ],
     "imageSrc": "history/mentoring.png"
-  },
-    {
-      "role": "Hackfest 2024",
-      "organisation": "",
-      "startDate": "26 April 2024",
-      "endDate": "28 April 2024",
-      "experiences": ["Hackfest Participant", "Creating Web Database and Front-End"],
-      "imageSrc": "history/hackfesting.png"
-    },
-    {
-      "role": "Foy Clinic",
-      "organisation": "Outside Tech",
-      "startDate": "1 June 2024",
-      "endDate": "Present",
-      "experiences": ["Data analytics for social media", "Content creator"],
-      "imageSrc": "history/foy.png"
-    }
-  ]
+  }
+]

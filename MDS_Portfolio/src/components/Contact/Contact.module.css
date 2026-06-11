@@ -1,64 +1,154 @@
-@import "../../vars.css";
+/* Styling Container Utama Footer */
+.container {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, transparent 0%, rgba(11, 19, 43, 0.8) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 5rem 10% 2rem; /* Ruang atas besar, ruang bawah kecil untuk copyright */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 4rem;
+}
 
-  .container {
-    color: var(--color-text);
-    margin-top: 120px;
-    background-color: var(--color-secondary);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100vw;
-    padding: 58px 10%;
-    gap: 10px;
+/* Wrapper untuk Teks & Link */
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* Bagian Kiri (Teks) */
+.text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.text h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #ffffff, #007aff);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.text p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #a0aab2;
+}
+
+/* Bagian Kanan (Daftar Link) */
+.links {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Efek geser kanan saat di-hover */
+.link:hover {
+  transform: translateX(10px);
+}
+
+/* Wrapper Ikon (Lingkaran Glassmorphism) */
+.iconWrapper {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Ikon menyala biru saat di-hover */
+.link:hover .iconWrapper {
+  background: rgba(0, 122, 255, 0.2);
+  border-color: rgba(0, 122, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 122, 255, 0.3);
+}
+
+.iconWrapper img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* Teks Link */
+.link a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.link:hover a {
+  color: #007aff;
+}
+
+/* Baris Copyright di Paling Bawah */
+.bottomBar {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.bottomBar p {
+  font-size: 0.9rem;
+  color: #718096;
+}
+
+/* Responsivitas untuk Tablet & Mobile */
+@media screen and (max-width: 830px) {
+  .content {
+    flex-direction: column;
+    text-align: center;
+    gap: 3rem;
   }
-  
-  .text h2 {
-    font-size: 80px;
-    font-weight: 700;
-    letter-spacing: 4px;
-  }
-  
-  .text p {
-    font-size: 40px;
-    font-weight: 400;
-    letter-spacing: 2px;
-  }
-  
-  .links {
+
+  .text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    list-style: none;
-    gap: 26px;
-  }
-  
-  .link {
-    display: flex;
     align-items: center;
-    gap: 25px;
   }
-  
-  .link a {
-    color: var(--color-text);
-    text-decoration: none;
-    font-size: 30px;
-    font-weight: 400;
-    letter-spacing: 1.5px;
+
+  .text h2 {
+    font-size: 2.8rem;
   }
-  
-  @media screen and (max-width: 830px) {
-    .container {
-      flex-direction: column;
-      gap: 23px;
-    }
-  
-    .text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .links {
-      align-items: center;
-    }
+
+  .links {
+    align-items: center;
+    width: 100%;
   }
+
+  /* Di layar HP, geser ke atas, bukan ke kanan, saat di-hover */
+  .link:hover {
+    transform: translateY(-5px);
+  }
+}

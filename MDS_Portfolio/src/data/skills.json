@@ -1,50 +1,82 @@
 [
   {
-    "title": "Java",
-    "imageSrc": "skills/java.png"
-  },
-  {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
-  },
-  {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
-    "title": "MySQL",
-    "imageSrc": "skills/mysql.png"
-  },
-  {
-    "title": "PHP",
-    "imageSrc": "skills/php.png"
-  },
-  {
-    "title": "Kotlin",
-    "imageSrc": "skills/kotlin.png"
-  },
-  {
     "title": "Swift",
-    "imageSrc": "skills/swift.png"
+    "imageSrc": "skills/swift.png",
+    "category": "language"
   },
   {
     "title": "Python",
-    "imageSrc": "skills/python.png"
-  },
-  {
-    "title": "React",
-    "imageSrc": "skills/react.png"
+    "imageSrc": "skills/python.png",
+    "category": "language"
   },
   {
     "title": "JavaScript",
-    "imageSrc": "skills/js.png"
+    "imageSrc": "skills/js.png",
+    "category": "language"
   },
   {
     "title": "Dart",
-    "imageSrc": "skills/dart.png"
+    "imageSrc": "skills/dart.png",
+    "category": "language"
+  },
+  {
+    "title": "Kotlin",
+    "imageSrc": "skills/kotlin.png",
+    "category": "language"
+  },
+  {
+    "title": "Java",
+    "imageSrc": "skills/java.png",
+    "category": "language"
+  },
+  {
+    "title": "PHP",
+    "imageSrc": "skills/php.png",
+    "category": "language"
   },
   {
     "title": "MATLAB",
-    "imageSrc": "skills/MATLAB.png"
+    "imageSrc": "skills/MATLAB.png",
+    "category": "language"
+  },
+  {
+    "title": "HTML",
+    "imageSrc": "skills/html.png",
+    "category": "language"
+  },
+  {
+    "title": "CSS",
+    "imageSrc": "skills/css.png",
+    "category": "language"
+  },
+  {
+    "title": "React",
+    "imageSrc": "skills/react.png",
+    "category": "framework"
+  },
+  {
+    "title": "Flutter",
+    "imageSrc": "skills/flutter.png",
+    "category": "framework"
+  },
+  {
+    "title": "Laravel",
+    "imageSrc": "skills/laravel.png",
+    "category": "framework"
+  },
+  {
+    "title": "MySQL",
+    "imageSrc": "skills/mysql.png",
+    "category": "database"
+  },
+  {
+    "title": "Firebase",
+    "imageSrc": "skills/firebase.png",
+    "category": "database"
+  },
+  {
+    "title": "Appwrite",
+    "imageSrc": "skills/appwrite.png",
+    "category": "database"
   }
 ]

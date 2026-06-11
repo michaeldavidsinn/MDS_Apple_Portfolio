@@ -1,116 +1,188 @@
-@import "../../vars.css";
-
+/* Styling Utama Section */
 .container {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 49px;
+  padding: 5rem 10%;
+  min-height: 85vh;
   z-index: 1;
-  margin-left: 10%;
-  margin-right: 10%;
+  background-color: transparent; 
 }
 
+/* Bagian Kiri (Teks) */
 .content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  color: var(--color-text);
-  z-index: 1;
+  max-width: 600px;
+}
+
+.badge {
+  background: rgba(0, 122, 255, 0.1);
+  color: #4da3ff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+  border: 1px solid rgba(0, 122, 255, 0.2);
 }
 
 .title {
-  font-size: 72px;
-  font-weight: 900;
-  margin-bottom: 33px;
-  font-family: var(--font-roboto);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 70%,
-    rgba(255, 255, 255, 0) 120%
-  );
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  line-height: 1.1;
+  letter-spacing: -1px;
+}
+
+/* Animasi lambaian tangan */
+.wave {
+  display: inline-block;
+  animation: waveAnim 2.5s infinite;
+  transform-origin: 70% 70%;
+}
+
+@keyframes waveAnim {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) }
+  100% { transform: rotate( 0.0deg) }
 }
 
 .description {
-  font-size: 30px;
-  font-family: var(--font-roboto);
-  margin-bottom: 52px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #a0aab2;
+  margin-bottom: 2.5rem;
 }
 
-.contactBtn {
-  text-decoration: none;
-  background-color: var(--color-primary);
-  color: var(--color-text);
-  border-radius: 100px;
-  font-size: 30px;
-  font-weight: 600;
-  padding: 17px 26px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
-}
-
+/* Grup Tombol */
 .buttonContainer {
   display: flex;
-  gap: 20px;
+  gap: 1rem;
+}
+
+.primaryBtn, .secondaryBtn {
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.primaryBtn {
+  background-color: #007aff;
+  color: #ffffff;
+  border: none;
+  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+}
+
+.primaryBtn:hover {
+  background-color: #005bb5;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+}
+
+.secondaryBtn {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.secondaryBtn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Bagian Kanan (Gambar Profil) */
+.imageContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: float 6s ease-in-out infinite; /* Efek melayang */
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.imageWrapper {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  padding: 10px;
+  background: linear-gradient(135deg, #007aff, #8a2be2);
+  z-index: 2;
+  
+  /* Tambahan untuk mendukung interaksi drag */
+  cursor: grab;
+  user-select: none; /* Mencegah teks tak sengaja terblok saat men-drag gambar */
+  touch-action: none; /* Menghindari layar ikut terscroll saat gambar di-drag di HP */
+}
+
+/* Kursor saat gambar sedang ditahan/ditarik */
+.imageWrapper:active {
+  cursor: grabbing;
 }
 
 .heroImg {
-  width: 50%;
-  z-index: 1;
-
-  animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid #0B132B; /* Menyesuaikan dengan warna background gelap websitemu */
 }
 
-@keyframes floating {
-  0% {
-    transform: translate(0, 0px);
-  }
-  50% {
-    transform: translate(0, 10px);
-  }
-  100% {
-    transform: translate(0, -0px);
-  }
-}
-
-.topBlur {
+/* Cahaya Estetik di belakang gambar */
+.glowEffect {
   position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(0, 122, 255, 0.4) 0%, rgba(0,0,0,0) 70%);
+  border-radius: 50%;
   z-index: 0;
+  filter: blur(40px);
 }
 
-.bottomBlur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 246px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-@media screen and (max-width: 830px) {
+/* Responsivitas untuk layar kecil/HP */
+@media screen and (max-width: 968px) {
   .container {
     flex-direction: column-reverse;
+    text-align: center;
+    padding: 6rem 5%;
+    gap: 4rem;
   }
 
   .content {
     align-items: center;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .imageWrapper {
+    width: 300px;
+    height: 300px;
   }
 }
