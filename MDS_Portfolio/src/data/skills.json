@@ -10,6 +10,11 @@
     "category": "language"
   },
   {
+    "title": "TypeScript",
+    "imageSrc": "skills/typescript.svg.png",
+    "category": "language"
+  },
+  {
     "title": "JavaScript",
     "imageSrc": "skills/js.png",
     "category": "language"
@@ -55,6 +60,11 @@
     "category": "framework"
   },
   {
+    "title": "Electron",
+    "imageSrc": "skills/electron.svg.png",
+    "category": "framework"
+  },
+  {
     "title": "Flutter",
     "imageSrc": "skills/flutter.png",
     "category": "framework"
@@ -72,11 +82,6 @@
   {
     "title": "Firebase",
     "imageSrc": "skills/firebase.png",
-    "category": "database"
-  },
-  {
-    "title": "Appwrite",
-    "imageSrc": "skills/appwrite.png",
     "category": "database"
   }
 ]

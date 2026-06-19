@@ -24,7 +24,7 @@ export const Navbar = () => {
         // Menggabungkan class default dengan class 'scrolled' jika halaman digulir
         <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ""}`}>
             <a className={styles.title} href="/">
-                &lt;Michael /&gt; {/* Branding logo yang lebih tech-savvy */}
+                &lt;MDS&gt; {/* Branding logo yang lebih tech-savvy */}
             </a>
             
             <div className={styles.menu}>

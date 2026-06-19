@@ -60,12 +60,16 @@ export const About = () => {
                     </div>
                     <div className={styles.timeline}>
                         <div className={styles.timelineItem}>
+                            <h4>Coder</h4>
+                            <p>Apple Developer Academy</p>
+                        </div>
+                        <div className={styles.timelineItem}>
                             <h4>Informatics Student</h4>
                             <p>Universitas Ciputra Surabaya</p>
                         </div>
                         <div className={styles.timelineItem}>
-                            <h4>Coder</h4>
-                            <p>Apple Developer Academy</p>
+                            <h4>High School</h4>
+                            <p>SMA Cita Hati East Surabaya</p>
                         </div>
                     </div>
                 </motion.div>
@@ -74,7 +78,7 @@ export const About = () => {
                 <motion.div className={`${styles.card} ${styles.orgCard}`} variants={cardVariants}>
                     <div className={styles.cardHeader}>
                         <span className={styles.icon}>🏆</span>
-                        <h3>Experience</h3>
+                        <h3>Experience & Certs</h3>
                     </div>
                     <ul className={styles.list}>
                         <li>
@@ -84,6 +88,10 @@ export const About = () => {
                         <li>
                             <strong>BNSP Certified Programmer</strong>
                             <span>Competency Certification</span>
+                        </li>
+                        <li>
+                            <strong>cPanel Professional</strong>
+                            <span>Certification (May 2026)</span>
                         </li>
                     </ul>
                 </motion.div>

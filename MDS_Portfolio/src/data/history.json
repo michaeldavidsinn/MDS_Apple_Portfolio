@@ -23,6 +23,18 @@
     "imageSrc": "history/wepeka.png"
   },
   {
+    "role": "IT / Web Developer",
+    "organisation": "Ubinkayu Indonesia",
+    "startDate": "2 June 2025",
+    "endDate": "16 November 2025",
+    "experiences": [
+      "Developed and deployed a custom web-based application for tracking Purchase Orders (PO) to streamline business operations",
+      "Created and maintained the official company website to establish and strengthen digital presence",
+      "Gained practical industry knowledge regarding wood export and import logistics and business processes"
+    ],
+    "imageSrc": "history/ubinkayu.png"
+  },
+  {
     "role": "Data Analyst & Content Creator",
     "organisation": "Foy Clinic",
     "startDate": "1 June 2024",

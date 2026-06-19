@@ -6,7 +6,8 @@ import styles from "./Hero.module.css";
 export const Hero = () => {
 
     const handleDownloadCV = () => {
-        const cvUrl = "/MDS_Portfolio/assets/cv/Michael_David_Sin_CV.pdf"; 
+        // Path disesuaikan persis dengan nama file dan ekstensi .jpg di foldermu
+        const cvUrl = "/MDS_Portfolio/assets/cv/Michael David Sin_CV.jpg"; 
         window.open(cvUrl, "_blank"); 
     };
 
