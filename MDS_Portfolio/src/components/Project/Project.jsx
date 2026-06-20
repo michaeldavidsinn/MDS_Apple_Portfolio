@@ -1,11 +1,10 @@
-import React from "react";
 import { motion } from "framer-motion";
 import styles from "./Project.module.css";
 import project from "../../data/project.json";
 import { ProjectCard } from "./ProjectCard";
 
 export const Project = () => {
-    // Varian animasi untuk grid pembungkus
+    // Varian animasi untuk grid pembungkus (efek muncul bergantian)
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -30,9 +29,10 @@ export const Project = () => {
                 whileInView="visible"
                 viewport={{ once: true, margin: "-100px" }}
             >
-                {project.map((proj, id) => {
-                    return <ProjectCard key={id} project={proj} />;
-                })}
+                {project.map((proj, id) => (
+                    // Data objek proyek langsung dioper ke ProjectCard
+                    <ProjectCard key={id} project={proj} />
+                ))}
             </motion.div>
         </section>
     );

@@ -1,50 +1,119 @@
 [
   {
-    "title": "ALP WebDev",
+    "title": "MLP Web",
     "imageSrc": "projects/project_alpwebdev.png",
     "description": "ALP project for subject Web Development in Semester 4 that was created to support my family business in Balikpapan",
     "skills": ["HTML", "PHP", "MySQL", "CSS"],
-    "detail": "https://drive.google.com/drive/folders/1PNBr-QixqxiHprtiPPh75RUUBmouQReJ?usp=share_link",
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Back-End",
+      "longDescription": "My friend and I are building a PHP website with a database connection for my parents' business, the biggest ceramic supplier in Balikpapan. Customers can browse all company information and products without visiting the store. As the backend developer, I'm responsible for creating secure login and registration functionalities, as well as CRUD (Create, Read, Update, Delete) functions to manage the database tables efficiently. This project is exciting as it will help my parents' business reach a wider audience by showcasing their products online.",
+      "images": [
+        "projects/mlp/mlp_1.png",
+        "projects/mlp/mlp_2.png",
+        "projects/mlp/mlp_3.png",
+        "projects/mlp/mlp_4.png"
+      ]
+    },
     "source": "https://github.com/michaeldavidsinn/ALP_Web-Development.git"
   },
   {
     "title": "EduLiving",
     "imageSrc": "projects/project_eduliving.png",
-    "description": "We created a website to supports Kebun Binatang Surabaya by creating a game-quiz that will get you new animal stored in your collection if you win",
+    "description": "Developed an interactive quiz website for Surabaya Zoo visitors to learn educational facts and win virtual animal collectibles.",
     "skills": ["HTML", "PHP", "MySQL", "CSS"],
-    "detail": "https://drive.google.com/drive/folders/1ZLXP0QKclDdJrm3qHjg0fhMwHY7w-OnW?usp=share_link",
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Front-End",
+      "longDescription": "My team and I participated in the 2-day Hackfest 2024 at Universitas Ciputra, tasked with tackling a challenge at the Surabaya Zoo using an application or website platform. We opted to create a quiz website for visitors, offering a chance to win a collection of animal figurines along with educational information upon successful completion. My role involved designing all the website pages.",
+      "images": [
+        "projects/eduliving/eduliving_1.png",
+        "projects/eduliving/eduliving_2.png",
+        "projects/eduliving/eduliving_3.png",
+        "projects/eduliving/eduliving_4.png"
+      ]
+    },
     "source": "https://github.com/jhwrwe/11_Mana-KPKu_EduLiving.git"
   },
   {
     "title": "GreenThumb",
     "imageSrc": "projects/project_greenthumb.png",
-    "description": "This is an ongoing project for ALP in Mobile Application Development subject which we build a swift-based app to support green-lifestyle",
-    "skills": ["Swift"],
-    "detail": "https://drive.google.com/drive/folders/1YN3gOyTnKhIZT4n0WeDFLSl59pqQMs19?usp=share_link",
+    "description": "Developed a cross-platform Swift application (iOS & macOS) to assist users in identifying and managing their personal plant database.",
+    "skills": ["Swift", "iOS", "macOS"],
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Front-End & Back-End",
+      "longDescription": "For a Mobile Application Development (MAD) course project, my team and I created a Swift-based application to assist individuals in identifying their plants. The app features a comprehensive plant database and allows users to add their own plants. My responsibilities included handling the DetailView for iOS and macOS, managing app navigation, and implementing the logic for adding plants to the MyPlantsView.",
+      "images": [
+        "projects/greenthumb/greenthumb_1.png",
+        "projects/greenthumb/greenthumb_2.png",
+        "projects/greenthumb/greenthumb_3.png",
+        "projects/greenthumb/greenthumb_4.png",
+        "projects/greenthumb/greenthumb_5.png",
+        "projects/greenthumb/greenthumb_6.png",
+        "projects/greenthumb/greenthumb_7.png",
+        "projects/greenthumb/greenthumb_8.png"
+      ]
+    },
     "source": "https://github.com/LouisSetyandaru/GreenThumb.git"
   },
   {
     "title": "DigPro",
     "imageSrc": "projects/project_digpro.png",
-    "description": "We build a well designed content creator website that supports UMKM or other business in Indonesia",
+    "description": "Developed a PHP-based platform connecting content creators with SMEs in Surabaya, featuring subscription forms and an integrated database.",
     "skills": ["HTML", "PHP", "MySQL", "CSS"],
-    "detail": "https://drive.google.com/drive/folders/14s2OoGm_wZLkg0dkNWmtZNIFKHO6JrNz?usp=share_link",
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Front-End & Back-End",
+      "longDescription": "As part of a Digital Innovation Entrepreneurship (DEI) course project, my team is developing a PHP-based website with a database to connect content creators with SMEs in Surabaya. The website, while still in its early stages, features an MVP, subscription forms, and product listings. My contributions include designing the website and creating a database that integrates with a count page to track the number of paying customers.",
+      "images": [
+        "projects/digpro/digpro_1.png",
+        "projects/digpro/digpro_2.png",
+        "projects/digpro/digpro_3.png",
+        "projects/digpro/digpro_4.png"
+      ]
+    },
     "source": "https://github.com/LouisSetyandaru/Web_DEI.git"
   },
   {
     "title": "De Sauge",
     "imageSrc": "projects/project_desauge.png",
-    "description": "Although without database,i made a website from templates downloaded from envato and manage to make it work as an actual website for my client",
+    "description": "Transformed an Envato template into a fully functional e-commerce website for a client selling mushroom-based sausages.",
     "skills": ["HTML", "CSS", "JavaScript"],
-    "detail": "https://drive.google.com/drive/folders/1ESkHSPlFtcOGDXd3EK4Y0dCIp1L4bphQ?usp=share_link",
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Front-End & Back-End",
+      "longDescription": "I have transformed an Envato template into a fully functional e-commerce website for a client selling mushroom-based sausages. The website features various functionalities, including product browsing, purchasing, payment processing, FAQ, and contact information. This project demonstrates my ability to customize and enhance existing templates to create user-friendly and interactive web solutions.",
+      "images": [
+        "projects/desauge/desauge_1.png",
+        "projects/desauge/desauge_2.png",
+        "projects/desauge/desauge_3.png",
+        "projects/desauge/desauge_4.png"
+      ]
+    },
     "source": "https://github.com/michaeldavidsinn/desauge.git"
   },
   {
     "title": "BikeFlow",
     "imageSrc": "projects/project_bikeflow.png",
-    "description": "Developed a time series AI model to predict daily bike usage based on environmental factors. Led AI development, backend, and frontend integration in a three-member team.",
+    "description": "Developed a time series machine learning model (SARIMAX) to predict daily bike usage, integrating the AI with a full-stack web interface.",
     "skills": ["HTML", "CSS", "JavaScript", "Python"],
-    "detail": "https://drive.google.com/file/d/1oW64G09EoZYtI_nBrPq6L-rSJLlt3ylz/view?usp=sharing",
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Front-End, Back-End & AI Engineer",
+      "longDescription": "Developed a website for predicting daily bike usage based on environmental factors and yearly trends using a time series machine learning model (SARIMAX). As part of a three-member team, I was responsible for building the AI model, developing the backend, and integrating it with the frontend to ensure seamless functionality.",
+      "images": [
+        "projects/bikeflow/bikeflow_1.png",
+        "projects/bikeflow/bikeflow_2.png",
+        "projects/bikeflow/bikeflow_3.png"
+      ]
+    },
     "source": "https://github.com/ImiaFeder/bikeShare.git"
   },
   {
@@ -52,7 +121,15 @@
     "imageSrc": "projects/project_yuccagpt.png",
     "description": "Developed an AI-powered text-to-speech system for Universitas Ciputra Surabaya using Python and Google Cloud. Handled backend, frontend, and AI integration.",
     "skills": ["React", "CSS", "JavaScript", "Python"],
-    "detail": "https://drive.google.com/file/d/1dav3kb4Fujt0BUMeGk0OV3bSqKa_uZSV/view?usp=share_link",
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Front-End & Back-End",
+      "longDescription": "Developed an AI-powered text-to-speech system for delivering all information about Universitas Ciputra Surabaya. Utilized Python to build the AI model, leveraging Google Cloud services for speech synthesis. My role involved developing both the backend and frontend, ensuring seamless integration with the AI for a smooth user experience.",
+      "images": [
+        "projects/yuccagpt/yuccagpt_1.png"
+      ]
+    },
     "source": "https://github.com/NiCS16/yucca_ai_alp.git"
   }
 ]

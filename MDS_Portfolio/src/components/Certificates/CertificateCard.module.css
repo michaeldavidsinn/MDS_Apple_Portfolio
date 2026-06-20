@@ -1,0 +1,118 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    padding: 1.8rem; /* Memberikan jarak bernapas di dalam kartu */
+  }
+  
+  .container:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 215, 0, 0.3);
+    box-shadow: 0 20px 40px -15px rgba(255, 215, 0, 0.15);
+  }
+  
+  /* Penataan Logo & Tanggal di Atas */
+  .headerArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logoWrapper {
+    width: 65px;
+    height: 65px;
+    border-radius: 14px; /* Bentuk membulat khas Apple squircle */
+    background-color: #ffffff; /* Background putih agar logo apapun terlihat jelas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.6rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .dateBadge {
+    background: rgba(0, 122, 255, 0.1);
+    color: #4da3ff;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 122, 255, 0.2);
+  }
+  
+  /* Penataan Teks Utama */
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Mendorong tombol ke bawah jika teksnya pendek */
+  }
+  
+  .title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.4rem;
+    line-height: 1.4;
+  }
+  
+  .issuer {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a0aab2;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .description {
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #d1d8e0;
+    line-height: 1.6;
+    margin-bottom: 1.8rem;
+  }
+  
+  /* Tombol Download di Bawah */
+  .footer {
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  .downloadBtn {
+    display: block; /* Memastikan link membentang penuh seperti tombol */
+    box-sizing: border-box; /* Mencegah ukuran tombol meluber ke luar kontainer */
+    text-decoration: none; /* Menghilangkan garis bawah bawaan link */
+    
+    /* Kode lama kamu di bawah ini tetap sama */
+    width: 100%;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0.8rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .downloadBtn:hover {
+    background-color: #007aff; 
+    border-color: #007aff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 122, 255, 0.3);
+  }

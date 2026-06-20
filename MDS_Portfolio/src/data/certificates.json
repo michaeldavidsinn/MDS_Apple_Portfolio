@@ -1,0 +1,26 @@
+[
+    {
+      "title": "cPanel Professional Certification",
+      "issuer": "cPanel University",
+      "date": "May 29, 2026",
+      "description": "Successfully completed the cPanel Professional Certification Exam, validating expertise in web hosting server administration and control panel management.",
+      "logoSrc": "certificates/logo/logo_cpanel.png",
+      "pdfUrl": "certificates/pdf/cpanel.pdf"
+    },
+    {
+      "title": "Sertifikat Kompetensi Pemrogram Dasar",
+      "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
+      "date": "December 10, 2025",
+      "description": "National competency certification in Information and Communication Technology with a Programmer qualification.",
+      "logoSrc": "certificates/logo/logo_bnsp.png",
+      "pdfUrl": "certificates/pdf/bnsp.docx.pdf"
+    },
+    {
+      "title": "Dynamic Placement Test - CEFR B2",
+      "issuer": "ClarityEnglish / Universitas Ciputra",
+      "date": "March 6, 2026",
+      "description": "Achieved a B2 (Independent User) English proficiency level, demonstrating the ability to understand complex texts and present arguments effectively.",
+      "logoSrc": "certificates/logo/logo_dpt.png.webp",
+      "pdfUrl": "certificates/pdf/dpt.pdf"
+    }
+  ]
