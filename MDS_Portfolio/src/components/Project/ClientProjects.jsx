@@ -29,16 +29,20 @@ export const ClientProjects = () => {
         viewport={{ once: true, margin: "-50px" }}
       >
         {clientsData.map((client, id) => (
-          <motion.div key={id} className={styles.card} variants={cardVariants}>
+          <motion.div 
+            key={id} 
+            className={styles.card} 
+            variants={cardVariants}
+            onClick={() => window.open(client.link, "_blank")}
+          >
             <div className={styles.cardHeader}>
-              <div className={styles.folderIcon}>📁</div>
-              <a href={client.link} target="_blank" rel="noopener noreferrer" className={styles.linkIcon}>
-                ↗
-              </a>
+              <div className={styles.codeIcon}>&lt; /&gt;</div>
+              <div className={styles.linkIcon}>↗</div>
             </div>
             
             <h4 className={styles.clientName}>{client.name}</h4>
             <p className={styles.category}>{client.category}</p>
+            <p className={styles.description}>{client.description}</p>
             
             <ul className={styles.skills}>
               {client.skills.map((skill, index) => (

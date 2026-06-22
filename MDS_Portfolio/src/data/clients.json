@@ -1,44 +1,44 @@
 [
   {
-    "name": "Charlene Web",
+    "name": "Charlene Wijaya",
     "category": "Personal Portfolio",
-    "skills": ["React", "CSS"],
+    "description": "A visually engaging portfolio crafted to showcase visual communication design projects and creative assets.",
+    "skills": ["HTML", "JavaScript", "CSS"],
     "link": "https://github.com/michaeldavidsinn/charportos"
   },
   {
-    "name": "Cliffton Web",
+    "name": "Cliffton Wijaya",
     "category": "Personal Portfolio",
+    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
     "skills": ["HTML", "JavaScript", "CSS"],
-    "link": "#"
+    "link": "https://github.com/michaeldavidsinn/cliffton-wijaya"
   },
   {
-    "name": "Dinda Web",
+    "name": "Dinda Zoraya",
     "category": "Personal Portfolio",
+    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
     "skills": ["HTML", "JavaScript", "CSS"],
-    "link": "#"
+    "link": "https://github.com/michaeldavidsinn/dindaportos"
   },
   {
-    "name": "Ivan Web",
+    "name": "Jonathan Lienanto",
     "category": "Personal Portfolio",
-    "skills": ["React", "Tailwind"],
-    "link": "#"
+    "description": "A modern dynamic web portfolio built to deliver a highly interactive user experience.",
+    "skills": ["React", "JavaScript", "HTML", "CSS"],
+    "link": "https://github.com/michaeldavidsinn/jonathanportos"
   },
   {
-    "name": "Jojo Web",
+    "name": "Kenjo Kwee",
     "category": "Personal Portfolio",
-    "skills": ["HTML", "JavaScript", "CSS"],
-    "link": "#"
+    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
+    "skills": ["JavaScript", "HTML", "CSS"],
+    "link": "https://github.com/michaeldavidsinn/kenjoportos"
   },
   {
-    "name": "Kenjo Web",
+    "name": "Nicklaus Arthur",
     "category": "Personal Portfolio",
-    "skills": ["HTML", "JavaScript", "CSS"],
-    "link": "#"
-  },
-  {
-    "name": "Nicklaus Web",
-    "category": "Personal Portfolio",
-    "skills": ["React", "JavaScript", "CSS"],
-    "link": "#"
+    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
+    "skills": ["JavaScript", "HTML", "CSS"],
+    "link": "https://github.com/michaeldavidsinn/nicklausportos"
   }
 ]
