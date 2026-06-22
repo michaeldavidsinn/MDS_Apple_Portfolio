@@ -2,10 +2,11 @@
 .container {
   position: relative;
   display: flex;
-  align-items: center; /* Memastikan konten persis di tengah secara vertikal */
-  justify-content: space-between;
-  padding: 3rem 10% 2rem; /* Memangkas jarak atas dan bawah secara signifikan */
-  min-height: 70vh; /* Mengurangi tinggi dari 85vh menjadi 70vh agar lebih padat */
+  align-items: center; 
+  justify-content: center; /* Menarik konten ke tengah layar */
+  gap: 8rem; /* Mengunci jarak antara teks dan gambar agar pas (tidak kejauhan/kedekatan) */
+  padding: 3rem 10% 2rem; 
+  min-height: 70vh; 
   z-index: 1;
   background-color: transparent; 
 }
