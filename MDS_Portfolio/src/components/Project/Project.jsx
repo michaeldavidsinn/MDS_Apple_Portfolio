@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import styles from "./Project.module.css";
 import project from "../../data/project.json";
 import { ProjectCard } from "./ProjectCard";
+import { ProjectArchive } from "./ProjectArchive";
 
 export const Project = () => {
     // Varian animasi untuk grid pembungkus (efek muncul bergantian)
@@ -34,6 +35,7 @@ export const Project = () => {
                     <ProjectCard key={id} project={proj} />
                 ))}
             </motion.div>
+            <ProjectArchive/>
         </section>
     );
 };

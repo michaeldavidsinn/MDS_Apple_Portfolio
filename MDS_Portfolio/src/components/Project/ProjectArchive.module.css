@@ -1,0 +1,55 @@
+.container {
+    padding: 4rem 10%;
+    color: #ffffff;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #a0aab2;
+  }
+  
+  .tableWrapper {
+    overflow-x: auto; /* Memungkinkan scroll horizontal di layar kecil */
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+  
+  .table th {
+    color: #a0aab2;
+    font-size: 0.9rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .table td {
+    padding: 1.2rem 1rem;
+    font-size: 0.95rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .projectName {
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .table a {
+    color: #4da3ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .table a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsif: Padding lebih kecil di HP */
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 2rem 5%;
+    }
+  }

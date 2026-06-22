@@ -131,5 +131,24 @@
       ]
     },
     "source": "https://github.com/NiCS16/yucca_ai_alp.git"
+  },
+  {
+    "title": "Ubinkayu ERP",
+    "imageSrc": "projects/ubinkayu/ubinkayu_1.png",
+    "description": "Developed a hybrid integrated production management system (Desktop Electron & Web) to digitalize PT Ubinkayu's end-to-end operational workflow.",
+    "skills": ["Electron", "React", "Node.js", "TypeScript", "Google APIs"],
+    "detail": {
+      "isModal": true,
+      "year": "2025",
+      "role": "Full-Stack Developer",
+      "longDescription": "I developed a hybrid production management system (Desktop Electron & Web) that helps digitalize the workflow of PT Ubinkayu. This system manages end-to-end Purchase Orders, tracks production progress in real-time with photo documentation, and provides sales analysis powered by Google Sheets integration. Equipped with Role-Based Access Control for inter-divisional data security and an AI Assistant for fast business insights, Ubinkayu ERP enhances the company's efficiency, transparency, and decision-making accuracy.",
+      "images": [
+        "projects/ubinkayu/ubinkayu_1.png",
+        "projects/ubinkayu/ubinkayu_2.png",
+        "projects/ubinkayu/ubinkayu_3.png",
+        "projects/ubinkayu/ubinkayu_4.png"
+      ]
+    },
+    "source": "https://github.com/michaeldavidsinn/ubinkayu-erp1"
   }
 ]
