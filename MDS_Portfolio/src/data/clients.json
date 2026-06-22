@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Charlene Web",
+    "category": "Personal Portfolio",
+    "skills": ["React", "CSS"],
+    "link": "https://github.com/michaeldavidsinn/charportos"
+  },
+  {
+    "name": "Cliffton Web",
+    "category": "Personal Portfolio",
+    "skills": ["HTML", "JavaScript", "CSS"],
+    "link": "#"
+  },
+  {
+    "name": "Dinda Web",
+    "category": "Personal Portfolio",
+    "skills": ["HTML", "JavaScript", "CSS"],
+    "link": "#"
+  },
+  {
+    "name": "Ivan Web",
+    "category": "Personal Portfolio",
+    "skills": ["React", "Tailwind"],
+    "link": "#"
+  },
+  {
+    "name": "Jojo Web",
+    "category": "Personal Portfolio",
+    "skills": ["HTML", "JavaScript", "CSS"],
+    "link": "#"
+  },
+  {
+    "name": "Kenjo Web",
+    "category": "Personal Portfolio",
+    "skills": ["HTML", "JavaScript", "CSS"],
+    "link": "#"
+  },
+  {
+    "name": "Nicklaus Web",
+    "category": "Personal Portfolio",
+    "skills": ["React", "JavaScript", "CSS"],
+    "link": "#"
+  }
+]

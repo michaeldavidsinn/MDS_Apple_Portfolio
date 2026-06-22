@@ -1,0 +1,97 @@
+.container {
+  padding: 2rem 10% 5rem; /* Memberi jarak dari Featured Projects di atasnya */
+  color: #ffffff;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  /* Menggunakan ukuran kartu yang lebih kecil agar muat banyak */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(0, 122, 255, 0.4);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.folderIcon {
+  font-size: 2rem;
+}
+
+.linkIcon {
+  color: #a0aab2;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.linkIcon:hover {
+  color: #007aff;
+}
+
+.clientName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+.category {
+  font-size: 0.85rem;
+  color: #a0aab2;
+  margin-bottom: 1.5rem;
+  flex-grow: 1; /* Mendorong skills ke bagian paling bawah kartu */
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skillBadge {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: rgba(0, 122, 255, 0.1);
+  color: #4da3ff;
+  padding: 0.3rem 0.8rem;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 122, 255, 0.2);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 2rem 5% 4rem;
+  }
+}
