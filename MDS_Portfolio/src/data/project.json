@@ -1,5 +1,24 @@
 [
   {
+    "title": "Dog Emotion Recognition System",
+    "badge": "🎓 Final Thesis", 
+    "imageSrc": "projects/project_dogemotion.png",
+    "description": "Developed an AI-powered dog care and behavioral recommendation system, featuring a cross-platform Flutter application integrated with a trained YOLO11 computer vision model.",
+    "skills": ["YOLO11", "Python", "Flutter", "Computer Vision", "Machine Learning"],
+    "detail": {
+      "isModal": true,
+      "year": "2026",
+      "role": "AI Engineer & Mobile Developer",
+      "longDescription": "For my final year thesis project, I designed and developed an intelligent dog care recommendation system focused on behavior and emotional state detection. I trained a state-of-the-art YOLO11 computer vision model using Python to classify various canine emotions and expressions with high accuracy. To bring this technology to users, I built a cross-platform Flutter mobile application that seamlessly integrates the AI model, allowing users to scan or monitor their dogs and instantly receive tailored care guidelines and behavioral insights based on the detected emotional states.",
+      "images": [
+        "projects/dog_emotion/dog_1.png",
+        "projects/dog_emotion/dog_2.png",
+        "projects/dog_emotion/dog_3.png"
+      ]
+    },
+    "source": "https://github.com/michaeldavidsinn/Dog-Emotion-YOLO11-CloudInference"
+  },
+  {
     "title": "MLP Web",
     "imageSrc": "projects/project_alpwebdev.png",
     "description": "ALP project for subject Web Development in Semester 4 that was created to support my family business in Balikpapan",
