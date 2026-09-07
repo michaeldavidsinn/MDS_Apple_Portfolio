@@ -33,11 +33,11 @@ export const Experience = () => {
                     whileInView="visible"
                     viewport={{ once: true, amount: 0.2 }}
                 >
-                    {/* Kelompok 1: Languages */}
-                    <h3 className={styles.subTitle}>Languages</h3>
-                    <div className={styles.skills} style={{ marginBottom: "2.5rem" }}>
+                    {/* Kelompok 1: Applied AI & Machine Learning */}
+                    <h3 className={styles.subTitle}>Applied AI & Machine Learning</h3>
+                    <div className={styles.skills} style={{ marginBottom: "2.2rem" }}>
                         {skills
-                            .filter(skill => skill.category === "language")
+                            .filter(skill => skill.category === "ai")
                             .map((skill, id) => (
                                 <motion.div key={id} className={styles.skillCard} variants={itemVariants}>
                                     <div className={styles.skillImageContainer}> 
@@ -48,11 +48,26 @@ export const Experience = () => {
                             ))}
                     </div>
 
-                    {/* Kelompok 2: Frameworks & Databases */}
-                    <h3 className={styles.subTitle}>Frameworks & Databases</h3>
+                    {/* Kelompok 2: Native Mobile & Apple Ecosystem */}
+                    <h3 className={styles.subTitle}>Mobile & Apple Ecosystem</h3>
+                    <div className={styles.skills} style={{ marginBottom: "2.2rem" }}>
+                        {skills
+                            .filter(skill => skill.category === "mobile")
+                            .map((skill, id) => (
+                                <motion.div key={id} className={styles.skillCard} variants={itemVariants}>
+                                    <div className={styles.skillImageContainer}> 
+                                        <img src={getImageurl(skill.imageSrc)} alt={skill.title} />
+                                    </div>
+                                    <p>{skill.title}</p>
+                                </motion.div>
+                            ))}
+                    </div>
+
+                    {/* Kelompok 3: Full-Stack Web & Cloud Architecture */}
+                    <h3 className={styles.subTitle}>Full-Stack & Cloud Architecture</h3>
                     <div className={styles.skills}>
                         {skills
-                            .filter(skill => skill.category !== "language")
+                            .filter(skill => skill.category === "web")
                             .map((skill, id) => (
                                 <motion.div key={id} className={styles.skillCard} variants={itemVariants}>
                                     <div className={styles.skillImageContainer}> 

@@ -36,7 +36,7 @@ export const Hero = () => {
             <span className={styles.statusDotPing} />
             <span className={styles.statusDot} />
           </span>
-          <span>Available for Software Engineering & iOS Roles</span>
+          <span>Available for Software Engineering, iOS & Applied AI Roles</span>
         </motion.div>
 
         <motion.h1 variants={itemVariants} className={styles.title}>
@@ -46,9 +46,9 @@ export const Hero = () => {
 
         <motion.p variants={itemVariants} className={styles.description}>
           Software Engineer & Coder at the Apple Developer Academy. I architect
-          robust digital products—bridging modern full-stack web platforms,
-          applied AI/computer vision systems, and native mobile experiences using
-          Swift, React, and Flutter.
+          intelligent, production-grade digital products—bridging applied AI/computer vision
+          pipelines, high-performance full-stack web platforms, and native Apple mobile
+          experiences using Swift, Python, React, and Flutter.
         </motion.p>
 
         <motion.div variants={itemVariants} className={styles.buttonContainer}>
@@ -92,8 +92,8 @@ export const Hero = () => {
           </div>
           <div className={styles.statDivider} />
           <div className={styles.statItem}>
-            <span className={styles.statValue}>Applied AI & iOS</span>
-            <span className={styles.statLabel}>YOLO11 • Swift/SwiftUI</span>
+            <span className={styles.statValue}>Applied AI & Vision</span>
+            <span className={styles.statLabel}>YOLO11 • PyTorch • Swift</span>
           </div>
         </motion.div>
       </motion.div>
