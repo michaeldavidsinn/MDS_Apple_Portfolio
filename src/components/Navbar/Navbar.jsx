@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { getImageurl } from "../../utils";
 
-export const Navbar = () => {
+export const Navbar = ({ onOpenCommandPalette }) => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -49,8 +49,25 @@ export const Navbar = () => {
                     <li>
                         <a href="#projects">Projects</a>
                     </li>
+                    <li>
+                        <a href="#certificates">Certifications</a>
+                    </li>
+                    <li>
+                        <button 
+                            className={styles.cmdBtn} 
+                            onClick={(e) => {
+                                e.stopPropagation();
+                                onOpenCommandPalette?.();
+                            }}
+                            title="Command Palette (Cmd+K)"
+                            aria-label="Open Command Palette"
+                        >
+                            <span>Search</span>
+                            <kbd className={styles.cmdKbd}>⌘K</kbd>
+                        </button>
+                    </li>
                 </ul>
             </div>
         </nav>
     );
-}
+};

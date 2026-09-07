@@ -1,4 +1,5 @@
 
+import React, { useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import styles from "./App.module.css";
 import { About } from "./components/About/About";
@@ -9,8 +10,10 @@ import { Navbar } from "./components/Navbar/Navbar";
 import { Project } from "./components/Project/Project";
 import { Certificates } from "./components/Certificates/Certificates";
 import { BackToTop } from "./components/BackToTop/BackToTop";
+import { CommandPalette } from "./components/CommandPalette/CommandPalette";
 
 function App() {
+  const [isCmdOpen, setIsCmdOpen] = useState(false);
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
@@ -22,7 +25,7 @@ function App() {
     <div className={styles.App}>
       {/* Apple-Style Minimalist Top Scroll Progress Bar */}
       <motion.div className={styles.progressBar} style={{ scaleX }} />
-      <Navbar />
+      <Navbar onOpenCommandPalette={() => setIsCmdOpen(true)} />
       <Hero />
       <About />
       <Experience />
@@ -30,6 +33,7 @@ function App() {
       <Certificates />
       <Contact />
       <BackToTop />
+      <CommandPalette isOpen={isCmdOpen} setIsOpen={setIsCmdOpen} />
     </div>
   );
 }

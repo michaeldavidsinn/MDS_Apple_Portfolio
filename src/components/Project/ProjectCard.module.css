@@ -1,8 +1,9 @@
 /* Styling Container Utama Kartu */
 .container {
+  position: relative;
   display: flex;
   flex-direction: column;
-  border-radius: 20px;
+  border-radius: 22px;
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.6);
@@ -13,10 +14,39 @@
   -webkit-backdrop-filter: blur(20px);
 }
 
+/* Apple Spotlight Cursor Glow */
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    550px circle at var(--mouse-x, -999px) var(--mouse-y, -999px),
+    rgba(41, 151, 255, 0.14),
+    transparent 45%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.container:hover::before {
+  opacity: 1;
+}
+
 .container:hover {
   transform: translateY(-5px);
-  border-color: rgba(255, 255, 255, 0.18);
-  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
+  border-color: rgba(255, 255, 255, 0.22);
+  box-shadow: 0 20px 45px -15px rgba(0, 0, 0, 0.85);
+}
+
+.imageWrapper, .content {
+  position: relative;
+  z-index: 2;
 }
 
 /* Wrapper Gambar & Efek Zoom */

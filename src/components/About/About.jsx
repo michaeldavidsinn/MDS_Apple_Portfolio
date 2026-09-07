@@ -17,6 +17,14 @@ export const About = () => {
         visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
     };
 
+    const handleMouseMove = (e) => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        e.currentTarget.style.setProperty("--mouse-x", `${x}px`);
+        e.currentTarget.style.setProperty("--mouse-y", `${y}px`);
+    };
+
     return (
         <section className={styles.container} id="about">
             <h2 className={styles.sectionTitle}>ABOUT</h2>
@@ -29,7 +37,11 @@ export const About = () => {
                 viewport={{ once: true, margin: "-100px" }}
             >
                 {/* Kartu 1: Bio & Core Focus (Lebar) */}
-                <motion.div className={`${styles.card} ${styles.bioCard}`} variants={cardVariants}>
+                <motion.div 
+                    className={`${styles.card} ${styles.bioCard}`} 
+                    variants={cardVariants}
+                    onMouseMove={handleMouseMove}
+                >
                     <div className={styles.cardHeader}>
                         <span className={styles.icon}>💻</span>
                         <h3>Who I Am</h3>
@@ -40,7 +52,11 @@ export const About = () => {
                 </motion.div>
 
                 {/* Kartu 2: Personal Info (Kotak) */}
-                <motion.div className={`${styles.card} ${styles.infoCard}`} variants={cardVariants}>
+                <motion.div 
+                    className={`${styles.card} ${styles.infoCard}`} 
+                    variants={cardVariants}
+                    onMouseMove={handleMouseMove}
+                >
                     <div className={styles.cardHeader}>
                         <span className={styles.icon}>👤</span>
                         <h3>Profile</h3>
@@ -54,7 +70,11 @@ export const About = () => {
                 </motion.div>
 
                 {/* Kartu 3: Education & Training (Lebar) */}
-                <motion.div className={`${styles.card} ${styles.eduCard}`} variants={cardVariants}>
+                <motion.div 
+                    className={`${styles.card} ${styles.eduCard}`} 
+                    variants={cardVariants}
+                    onMouseMove={handleMouseMove}
+                >
                     <div className={styles.cardHeader}>
                         <span className={styles.icon}>🎓</span>
                         <h3>Education & Academy</h3>
@@ -72,7 +92,11 @@ export const About = () => {
                 </motion.div>
 
                 {/* Kartu 4: Organization & Certifications (Kotak) */}
-                <motion.div className={`${styles.card} ${styles.orgCard}`} variants={cardVariants}>
+                <motion.div 
+                    className={`${styles.card} ${styles.orgCard}`} 
+                    variants={cardVariants}
+                    onMouseMove={handleMouseMove}
+                >
                     <div className={styles.cardHeader}>
                         <span className={styles.icon}>🏆</span>
                         <h3>Key Highlights</h3>

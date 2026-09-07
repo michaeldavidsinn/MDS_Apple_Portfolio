@@ -87,6 +87,17 @@
     padding: 4rem 5%;
   }
   
+  .filterTabs {
+    width: 100%;
+    border-radius: 18px;
+    gap: 0.35rem;
+  }
+
+  .tabBtn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.8rem;
+  }
+  
   .projectsGrid {
     grid-template-columns: 1fr;
     gap: 1.6rem;

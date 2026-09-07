@@ -41,13 +41,24 @@ export const ProjectCard = ({
     },
   };
 
-  // PERBAIKAN: Menambahkan pengecekan aman (detail &&) agar tidak error jika detail kosong
   const hasModalDetail = detail && typeof detail === "object" && detail.isModal;
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    e.currentTarget.style.setProperty("--mouse-x", `${x}px`);
+    e.currentTarget.style.setProperty("--mouse-y", `${y}px`);
+  };
 
   return (
     <>
       {/* 1. KARTU PROYEK UTAMA */}
-      <motion.div className={styles.container} variants={cardVariants}>
+      <motion.div 
+        className={styles.container} 
+        variants={cardVariants}
+        onMouseMove={handleMouseMove}
+      >
         <div className={styles.imageWrapper}>
           <img
             src={getImageurl(imageSrc)}
