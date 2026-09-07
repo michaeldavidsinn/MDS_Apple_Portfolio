@@ -4,12 +4,6 @@ import { getImageurl } from "../../utils";
 import styles from "./Hero.module.css";
 
 export const Hero = () => {
-  const handleDownloadCV = () => {
-    // Path disesuaikan persis dengan nama file dan ekstensi .jpg di foldermu
-    const cvUrl = "/MDS_Portfolio/assets/cv/Michael David Sin_CV.jpg";
-    window.open(cvUrl, "_blank");
-  };
-
   // Varian untuk membuat teks muncul satu per satu (Stagger)
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -47,14 +41,14 @@ export const Hero = () => {
         </motion.h1>
 
         <motion.p variants={itemVariants} className={styles.description}>
-          I'm an Informatics student and Coder at the Apple Developer Academy
-          based in Surabaya. I specialize in crafting exceptional digital
-          experiences—bridging full-stack development, AI integrations, and
-          sleek mobile applications using Swift, React, and Flutter.
+          Software Engineer & Coder at the Apple Developer Academy. I architect
+          robust digital products—bridging modern full-stack web platforms,
+          applied AI/computer vision systems, and native mobile experiences using
+          Swift, React, and Flutter.
         </motion.p>
 
         <motion.div variants={itemVariants} className={styles.buttonContainer}>
-          {/* Mengubah <a> dan <button> menjadi motion.a dan motion.button untuk efek klik */}
+          {/* Mengubah <a> dan <button> menjadi motion.a untuk efek klik */}
           <motion.a
             href="mailto:michaelsin04@gmail.com"
             className={styles.primaryBtn}
@@ -66,8 +60,10 @@ export const Hero = () => {
           >
             Let's Talk
           </motion.a>
-          <motion.button
-            onClick={handleDownloadCV}
+          <motion.a
+            href={getImageurl("cv/Michael DS_CV 2026.pdf")}
+            target="_blank"
+            rel="noopener noreferrer"
             className={styles.secondaryBtn}
             whileHover={{
               scale: 1.05,
@@ -76,7 +72,7 @@ export const Hero = () => {
             whileTap={{ scale: 0.95 }}
           >
             View Resume
-          </motion.button>
+          </motion.a>
         </motion.div>
       </motion.div>
 

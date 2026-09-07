@@ -1,17 +1,16 @@
 /* Styling Container Utama */
 .container {
-  padding: 4rem 10%;
+  padding: 5rem 10%;
   background-color: transparent;
-  color: #ffffff;
+  color: #f5f5f7;
 }
 
 .sectionTitle {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 3rem;
-  text-transform: uppercase;
-  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.8rem;
+  color: #f5f5f7;
 }
 
 /* Setup Bento Grid */
@@ -22,23 +21,24 @@
   grid-auto-rows: minmax(180px, auto);
 }
 
-/* Styling Dasar Kartu */
+/* Styling Dasar Kartu - Apple Bento Box */
 .card {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 24px;
-  padding: 2rem;
-  backdrop-filter: blur(10px);
-  transition: all 0.3s ease;
+  border-radius: 22px;
+  padding: 2.2rem;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   display: flex;
   flex-direction: column;
 }
 
 .card:hover {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(255, 255, 255, 0.15);
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px -10px rgba(0, 122, 255, 0.15);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.18);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.7);
 }
 
 /* Header di dalam Kartu */
@@ -50,24 +50,25 @@
 }
 
 .icon {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .cardHeader h3 {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
-  color: #e2e8f0;
+  color: #f5f5f7;
+  letter-spacing: -0.01em;
 }
 
-/* Penempatan Grid (Membuat ukuran berbeda tiap kartu) */
+/* Penempatan Grid */
 .bioCard {
   grid-column: span 2;
 }
 
 .bioCard p {
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   line-height: 1.7;
-  color: #a0aab2;
+  color: #86868b;
 }
 
 .infoCard {
@@ -82,7 +83,7 @@
   grid-column: span 1;
 }
 
-/* Styling List (Untuk Info & Experience) */
+/* Styling List */
 .list {
   list-style: none;
   padding: 0;
@@ -93,71 +94,79 @@
 }
 
 .list li {
-  font-size: 1rem;
-  color: #a0aab2;
+  font-size: 0.95rem;
+  color: #86868b;
   display: flex;
   flex-direction: column;
   gap: 0.2rem;
 }
 
 .list li strong {
-  color: #e2e8f0;
+  color: #f5f5f7;
+  font-weight: 500;
 }
 
 .list li span {
-  font-size: 0.9rem;
-  color: #718096;
+  font-size: 0.88rem;
+  color: #86868b;
 }
 
 /* Timeline sederhana untuk Edukasi */
 .timeline {
   display: flex;
-  gap: 2rem;
+  gap: 2.5rem;
   margin-top: 0.5rem;
 }
 
 .timelineItem {
-  border-left: 2px solid #007aff;
-  padding-left: 1rem;
+  border-left: 2px solid #2997ff;
+  padding-left: 1.2rem;
 }
 
 .timelineItem h4 {
-  font-size: 1.1rem;
-  color: #e2e8f0;
+  font-size: 1.05rem;
+  color: #f5f5f7;
+  font-weight: 600;
   margin-bottom: 0.3rem;
+  letter-spacing: -0.01em;
 }
 
 .timelineItem p {
-  font-size: 0.95rem;
-  color: #a0aab2;
+  font-size: 0.92rem;
+  color: #86868b;
 }
 
 /* Responsivitas untuk Tablet & Mobile */
 @media screen and (max-width: 1024px) {
   .bentoGrid {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .bioCard, .eduCard {
-      grid-column: span 2;
+    grid-column: span 2;
   }
   
   .infoCard, .orgCard {
-      grid-column: span 1;
+    grid-column: span 1;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .container {
+    padding: 4rem 5%;
+  }
+
   .bentoGrid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
   }
   
   .bioCard, .infoCard, .eduCard, .orgCard {
-      grid-column: span 1;
+    grid-column: span 1;
   }
 
   .timeline {
-      flex-direction: column;
-      gap: 1.5rem;
+    flex-direction: column;
+    gap: 1.5rem;
   }
 }

@@ -35,7 +35,7 @@ export const About = () => {
                         <h3>Who I Am</h3>
                     </div>
                     <p>
-                        I'm a fullstack & AI developer specializing in building responsive, optimized sites and robust back-end APIs. My current focus bridges mobile application development and Artificial Intelligence, including crafting Convolutional Neural Networks for complex behavior detection.
+                        I am a Software Engineer specializing in full-stack web architectures, native Apple ecosystem development (Swift/SwiftUI), and applied Artificial Intelligence. With hands-on experience delivering enterprise production software and training computer vision models, I bridge robust engineering with measurable business impact.
                     </p>
                 </motion.div>
 
@@ -46,30 +46,27 @@ export const About = () => {
                         <h3>Profile</h3>
                     </div>
                     <ul className={styles.list}>
-                        <li><strong>Name:</strong> Michael David Sin</li>
-                        <li><strong>Born:</strong> 17 Nov 2004 (Balikpapan)</li>
+                        <li><strong>Role:</strong> Software Engineer</li>
+                        <li><strong>Focus:</strong> Full-Stack, iOS, & Applied AI</li>
                         <li><strong>Base:</strong> Surabaya, Indonesia</li>
+                        <li><strong>Status:</strong> Open to Opportunities</li>
                     </ul>
                 </motion.div>
 
-                {/* Kartu 3: Education & Roles (Lebar) */}
+                {/* Kartu 3: Education & Training (Lebar) */}
                 <motion.div className={`${styles.card} ${styles.eduCard}`} variants={cardVariants}>
                     <div className={styles.cardHeader}>
                         <span className={styles.icon}>🎓</span>
-                        <h3>Education & Roles</h3>
+                        <h3>Education & Academy</h3>
                     </div>
                     <div className={styles.timeline}>
                         <div className={styles.timelineItem}>
-                            <h4>Coder</h4>
-                            <p>Apple Developer Academy</p>
+                            <h4>Apple Developer Academy</h4>
+                            <p>Cohort 2026 • iOS Development & Design</p>
                         </div>
                         <div className={styles.timelineItem}>
-                            <h4>Informatics Student</h4>
-                            <p>Universitas Ciputra Surabaya</p>
-                        </div>
-                        <div className={styles.timelineItem}>
-                            <h4>High School</h4>
-                            <p>SMA Cita Hati East Surabaya</p>
+                            <h4>Universitas Ciputra Surabaya</h4>
+                            <p>B.S. in Informatics (2022 - Present)</p>
                         </div>
                     </div>
                 </motion.div>
@@ -78,20 +75,20 @@ export const About = () => {
                 <motion.div className={`${styles.card} ${styles.orgCard}`} variants={cardVariants}>
                     <div className={styles.cardHeader}>
                         <span className={styles.icon}>🏆</span>
-                        <h3>Experience & Certs</h3>
+                        <h3>Key Highlights</h3>
                     </div>
                     <ul className={styles.list}>
                         <li>
-                            <strong>Mentoring Department</strong>
-                            <span>2023 - 2024</span>
-                        </li>
-                        <li>
                             <strong>BNSP Certified Programmer</strong>
-                            <span>Competency Certification</span>
+                            <span>National Competency</span>
                         </li>
                         <li>
-                            <strong>cPanel Professional</strong>
-                            <span>Certification (May 2026)</span>
+                            <strong>English Proficiency</strong>
+                            <span>CEFR B2 Certified</span>
+                        </li>
+                        <li>
+                            <strong>Student Mentor</strong>
+                            <span>Informatics UC (2023 - Present)</span>
                         </li>
                     </ul>
                 </motion.div>

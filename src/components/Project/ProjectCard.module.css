@@ -3,91 +3,107 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.03); /* Glassmorphism gelap */
+  background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.5);
-  overflow: hidden; /* Memastikan gambar tidak keluar dari sudut membulat */
-  transition: all 0.3s ease;
-  height: 100%; /* Memastikan semua kartu di row grid memiliki tinggi yang sama */
-  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  height: 100%;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
 }
 
 .container:hover {
-  transform: translateY(-8px);
-  border-color: rgba(0, 122, 255, 0.3);
-  box-shadow: 0 20px 40px -15px rgba(0, 122, 255, 0.2);
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
 }
 
 /* Wrapper Gambar & Efek Zoom */
 .imageWrapper {
   width: 100%;
-  height: 200px; /* Tinggi gambar dibuat seragam */
+  height: 200px;
   overflow: hidden;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background-color: #0b0b0e;
 }
 
 .image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Mencegah gambar gepeng */
+  object-fit: cover;
   object-position: top;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .container:hover .image {
-  transform: scale(1.05); /* Gambar sedikit membesar saat di-hover */
+  transform: scale(1.03);
 }
 
 /* Bagian Konten Teks */
 .content {
-  padding: 1.8rem;
+  padding: 1.6rem;
   display: flex;
   flex-direction: column;
-  flex-grow: 1; /* Mendorong tombol ke bawah jika teks pendek */
+  flex-grow: 1;
+}
+
+.specialBadge {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba(41, 151, 255, 0.1);
+  color: #2997ff;
+  border: 1px solid rgba(41, 151, 255, 0.25);
+  padding: 0.35rem 0.75rem;
+  border-radius: 980px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  margin-bottom: 0.8rem;
 }
 
 .title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 0.8rem;
-  letter-spacing: 0.5px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #f5f5f7;
+  margin-bottom: 0.6rem;
+  letter-spacing: -0.01em;
 }
 
 .description {
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 400;
-  color: #a0aab2;
+  color: #86868b;
   line-height: 1.6;
-  margin-bottom: 1.5rem;
-  flex-grow: 1; /* Mengisi ruang kosong di tengah */
+  margin-bottom: 1.4rem;
+  flex-grow: 1;
 }
 
 /* Tumpukan Teknologi (Skills/Tags) */
 .skills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.45rem;
   list-style: none;
   padding: 0;
-  margin-bottom: 2rem;
+  margin-bottom: 1.6rem;
 }
 
 .skill {
-  font-size: 0.8rem;
+  font-size: 0.76rem;
   font-weight: 500;
-  color: #4da3ff;
-  background: rgba(0, 122, 255, 0.1);
-  border: 1px solid rgba(0, 122, 255, 0.2);
-  border-radius: 50px;
-  padding: 0.4rem 0.8rem;
-  letter-spacing: 0.5px;
+  color: #f5f5f7;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 980px;
+  padding: 0.3rem 0.7rem;
+  letter-spacing: -0.01em;
 }
 
-/* Grup Tombol Link */
+/* Grup Tombol Link - Apple Pill */
 .links {
   display: flex;
-  gap: 1rem;
+  gap: 0.8rem;
   width: 100%;
 }
 
@@ -95,35 +111,35 @@
   flex: 1;
   text-align: center;
   text-decoration: none;
-  font-size: 0.95rem;
-  font-weight: 600;
-  border-radius: 50px;
-  padding: 0.7rem 1rem;
-  transition: all 0.3s ease;
+  font-size: 0.88rem;
+  font-weight: 500;
+  border-radius: 980px;
+  padding: 0.65rem 0.9rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: -0.01em;
+  cursor: pointer;
 }
 
-/* Tombol Utama (Live Demo / Portfolio) */
 .demoBtn {
-  background-color: #007aff;
+  background-color: #0071e3;
   color: #ffffff;
   border: 1px solid transparent;
 }
 
 .demoBtn:hover {
-  background-color: #005bb5;
+  background-color: #0077ED;
   transform: translateY(-2px);
 }
 
-/* Tombol Sekunder (Source Code) */
 .sourceBtn {
-  background-color: transparent;
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.04);
+  color: #f5f5f7;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
 .sourceBtn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.24);
   transform: translateY(-2px);
 }
 
@@ -131,159 +147,149 @@
    STYLING UNTUK MODAL POP-UP DETAIL
    ========================================= */
 
-   .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-    padding: 2rem;
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 2rem;
+}
+
+.modalContent {
+  background: #0d0d12;
+  width: 100%;
+  max-width: 1050px;
+  max-height: 90vh;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8);
+  position: relative;
+  overflow-y: auto;
+  padding: 2.8rem;
+  color: #f5f5f7;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #f5f5f7;
+  font-size: 1.3rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.closeBtn:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: rotate(90deg);
+}
+
+/* Layout 2 Kolom */
+.modalLayout {
+  display: flex;
+  gap: 3rem;
+}
+
+.modalSidebar {
+  flex: 0 0 26%;
+}
+
+.modalTitle {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.8rem;
+  color: #f5f5f7;
+  letter-spacing: -0.02em;
+}
+
+.modalMeta {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.metaItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.metaLabel {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #86868b;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.metaValue {
+  font-size: 1.02rem;
+  font-weight: 500;
+  color: #f5f5f7;
+}
+
+.modalMain {
+  flex: 1;
+}
+
+.modalDesc {
+  font-size: 0.96rem;
+  line-height: 1.7;
+  color: #86868b;
+  margin-bottom: 2.2rem;
+  text-align: left;
+  white-space: pre-line;
+}
+
+/* Grid Gambar 2x2 */
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.gridImage {
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  cursor: zoom-in;
+}
+
+.gridImage:hover {
+  transform: scale(1.02);
+}
+
+/* Responsif */
+@media screen and (max-width: 768px) {
+  .modalLayout {
+    flex-direction: column;
+    gap: 1.8rem;
   }
   
   .modalContent {
-    background: #0d1627;
-    width: 100%;
-    max-width: 1100px;
-    max-height: 90vh;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    position: relative;
-    overflow-y: auto; /* Scrollable jika konten melebihi tinggi layar */
-    padding: 3rem;
-    color: #fff;
+    padding: 1.8rem;
   }
-  
-  .closeBtn {
-    position: absolute;
-    top: 1.5rem;
-    right: 1.5rem;
-    background: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: #fff;
-    font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-  }
-  
-  .closeBtn:hover {
-    background: rgba(255, 255, 255, 0.2);
-    transform: rotate(90deg);
-  }
-  
-  /* Layout 2 Kolom (Kiri: Metadata, Kanan: Konten Utama) */
-  .modalLayout {
-    display: flex;
-    gap: 3rem;
-  }
-  
-  .modalSidebar {
-    flex: 0 0 25%; /* Kolom kiri mengambil 25% lebar */
-  }
-  
-  .modalTitle {
-    font-size: 2rem;
-    font-weight: 800;
-    margin-bottom: 2rem;
-    color: #ffffff;
-  }
-  
-  .modalMeta {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-  
-  .metaItem {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .metaLabel {
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: #a0aab2;
-    margin-bottom: 0.3rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-  
-  .metaValue {
-    font-size: 1.1rem;
-    font-weight: 400;
-    color: #ffffff;
-  }
-  
-  .modalMain {
-    flex: 1; /* Kolom kanan mengambil sisa ruang */
-  }
-  
-  .modalDesc {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: #d1d8e0;
-    margin-bottom: 2.5rem;
-    text-align: justify;
-  }
-  
-  /* Grid Gambar 2x2 */
+
   .imageGrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+    grid-template-columns: 1fr;
   }
-  
-  .gridImage {
-    width: 100%;
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .gridImage:hover {
-    transform: scale(1.02);
-  }
-  
-  /* Responsif untuk Layar Kecil (HP) */
-  @media screen and (max-width: 768px) {
-    .modalLayout {
-      flex-direction: column;
-      gap: 2rem;
-    }
-    
-    .modalContent {
-      padding: 2rem;
-    }
-  
-    .imageGrid {
-      grid-template-columns: 1fr; /* Jadi 1 kolom di HP */
-    }
-  }
-
-
-  /* =========================================
-   TAMBAHAN KURSOR PADA GAMBAR GRID MODAL
-   ========================================= */
-
-/* Update class .gridImage yang lama menjadi seperti ini */
-.gridImage {
-  width: 100%;
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.3s ease;
-  cursor: zoom-in; /* Memberi petunjuk bahwa gambar bisa di-zoom */
 }
 
 /* =========================================
@@ -296,60 +302,46 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.95); /* Latar lebih pekat dari modal biasa */
-  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Posisi teratas, mengalahkan modalOverlay yang z-indexnya 999 */
+  z-index: 1000;
   padding: 2rem;
-  cursor: zoom-out; /* Klik di manapun pada latar gelap untuk menutup */
+  cursor: zoom-out;
 }
 
 .lightboxImage {
-  max-width: 90%;
+  max-width: 92%;
   max-height: 90vh;
-  object-fit: contain; /* Memastikan gambar full tanpa terpotong */
-  border-radius: 10px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  object-fit: contain;
+  border-radius: 14px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
   cursor: default;
 }
 
 .lightboxCloseBtn {
   position: absolute;
-  top: 2rem;
-  right: 2.5rem;
+  top: 1.8rem;
+  right: 2rem;
   background: rgba(255, 255, 255, 0.1);
-  border: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   color: #fff;
-  font-size: 2rem;
-  width: 50px;
-  height: 50px;
+  font-size: 1.6rem;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   z-index: 1001;
 }
 
 .lightboxCloseBtn:hover {
   background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.1);
-}
-
-.specialBadge {
-  display: inline-block;
-  background: rgba(255, 215, 0, 0.15); /* Transparan gold */
-  color: #ffd700; /* Warna teks gold terang */
-  border: 1px solid rgba(255, 215, 0, 0.3);
-  padding: 0.4rem 0.8rem;
-  border-radius: 50px;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-bottom: 0.8rem; /* Memberi jarak ke judul proyek */
-  box-shadow: 0 0 10px rgba(255, 215, 0, 0.1);
+  transform: scale(1.08);
 }

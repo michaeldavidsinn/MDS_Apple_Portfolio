@@ -3,10 +3,10 @@
   position: relative;
   display: flex;
   align-items: center; 
-  justify-content: center; /* Menarik konten ke tengah layar */
-  gap: 8rem; /* Mengunci jarak antara teks dan gambar agar pas (tidak kejauhan/kedekatan) */
-  padding: 3rem 10% 2rem; 
-  min-height: 70vh; 
+  justify-content: space-between;
+  gap: 4rem;
+  padding: 6rem 10% 3rem; 
+  min-height: 75vh; 
   z-index: 1;
   background-color: transparent; 
 }
@@ -16,186 +16,146 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  max-width: 650px; /* Melebarkan kontainer teks dari 600px ke 650px */
+  max-width: 620px;
 }
 
 .badge {
-  background: rgba(0, 122, 255, 0.1);
-  color: #4da3ff;
-  padding: 0.5rem 1.2rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
+  background: rgba(41, 151, 255, 0.1);
+  color: #2997ff;
+  padding: 0.45rem 1.1rem;
+  border-radius: 980px;
+  font-size: 0.82rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  border: 1px solid rgba(0, 122, 255, 0.2);
+  border: 1px solid rgba(41, 151, 255, 0.25);
+  backdrop-filter: blur(12px);
 }
 
 .title {
-  font-size: 4rem; /* Sedikit disesuaikan agar proporsional */
-  font-weight: 800;
+  font-size: 3.8rem;
+  font-weight: 700;
   margin-bottom: 1.2rem;
-  color: #ffffff;
-  line-height: 1.2;
-  letter-spacing: -1px;
-  
-  /* Tambahan Flexbox agar nama dan emoji selalu sejajar! */
+  color: #f5f5f7;
+  line-height: 1.12;
+  letter-spacing: -0.03em;
   display: flex; 
   align-items: center;
-  gap: 1rem; /* Jarak antara nama dan emoji */
+  gap: 0.8rem;
   flex-wrap: wrap; 
 }
 
-/* 1. Tambahkan di bagian bawah .title */
 .nameHighlight {
-  background: linear-gradient(90deg, #007aff, #00d2ff); /* Gradien biru terang ala iOS */
+  background: linear-gradient(135deg, #2997ff 0%, #64d2ff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
 
-/* 2. Ganti seluruh class .imageWrapper lama dengan yang ini */
-.imageWrapper {
-  position: relative;
-  width: 380px;
-  height: 380px;
-  padding: 10px;
-  background: linear-gradient(135deg, #007aff, #8a2be2);
-  z-index: 2;
-  
-  /* Animasi Morphing Blob menggantikan border-radius 50% */
-  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  animation: morph 8s ease-in-out infinite;
-  
-  cursor: grab;
-  user-select: none; 
-  touch-action: none;
-  box-shadow: inset 0 0 0 6px #0B132B; /* Menambahkan bingkai dalam */
-}
-
-/* Kursor saat gambar ditarik */
-.imageWrapper:active {
-  cursor: grabbing;
-}
-
-/* 3. Update .heroImg agar mengikuti bentuk blob */
-.heroImg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  /* Mengikuti bentuk dari kontainer induknya (imageWrapper) */
-  border-radius: inherit; 
-}
-
-/* 4. Tambahkan animasi pergerakan bentuk di bagian paling bawah file */
-@keyframes morph {
-  0% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-  50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
-  100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-}
-
 .wave {
-  font-size: 3.5rem; /* Mengunci ukuran emoji agar tidak membengkak */
+  font-size: 3rem;
   display: inline-block;
   animation: waveAnim 2.5s infinite;
   transform-origin: 70% 70%;
 }
 
 @keyframes waveAnim {
-  0% { transform: rotate( 0.0deg) }
-  10% { transform: rotate(14.0deg) }
-  20% { transform: rotate(-8.0deg) }
-  30% { transform: rotate(14.0deg) }
-  40% { transform: rotate(-4.0deg) }
-  50% { transform: rotate(10.0deg) }
-  60% { transform: rotate( 0.0deg) }
-  100% { transform: rotate( 0.0deg) }
+  0% { transform: rotate(0.0deg); }
+  10% { transform: rotate(14.0deg); }
+  20% { transform: rotate(-8.0deg); }
+  30% { transform: rotate(14.0deg); }
+  40% { transform: rotate(-4.0deg); }
+  50% { transform: rotate(10.0deg); }
+  60% { transform: rotate(0.0deg); }
+  100% { transform: rotate(0.0deg); }
 }
 
 .description {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   line-height: 1.7;
-  color: #a0aab2;
-  margin-bottom: 2.5rem;
+  color: #86868b;
+  margin-bottom: 2.2rem;
+  letter-spacing: -0.01em;
 }
 
-/* Grup Tombol */
+/* Grup Tombol - Apple Pill Style */
 .buttonContainer {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .primaryBtn, .secondaryBtn {
-  padding: 0.9rem 2.2rem;
-  border-radius: 50px;
-  font-size: 1.05rem;
-  font-weight: 600;
+  padding: 0.85rem 2rem;
+  border-radius: 980px;
+  font-size: 0.95rem;
+  font-weight: 500;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   text-decoration: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  letter-spacing: -0.01em;
 }
 
 .primaryBtn {
-  background-color: #007aff;
+  background-color: #0071e3;
   color: #ffffff;
-  border: none;
-  box-shadow: 0 4px 15px rgba(0, 122, 255, 0.3);
+  border: 1px solid transparent;
+  box-shadow: 0 4px 20px rgba(0, 113, 227, 0.35);
 }
 
 .primaryBtn:hover {
-  background-color: #005bb5;
-  transform: translateY(-3px);
-  box-shadow: 0 6px 20px rgba(0, 122, 255, 0.4);
+  background-color: #0077ED;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 113, 227, 0.45);
 }
 
 .secondaryBtn {
   background-color: rgba(255, 255, 255, 0.05);
-  color: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
+  color: #f5f5f7;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
 .secondaryBtn:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-3px);
-  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+  border-color: rgba(255, 255, 255, 0.28);
 }
 
-/* Bagian Kanan (Gambar Profil) */
+/* Bagian Kanan (Gambar Profil - Apple Squircle Frame) */
 .imageContainer {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: float 6s ease-in-out infinite; /* Efek melayang */
+  animation: float 7s ease-in-out infinite;
 }
 
 @keyframes float {
   0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
+  50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
 
 .imageWrapper {
   position: relative;
-  width: 380px;
-  height: 380px;
-  border-radius: 50%;
-  padding: 10px;
-  background: linear-gradient(135deg, #007aff, #8a2be2);
+  width: 350px;
+  height: 350px;
+  border-radius: 28px;
+  padding: 3px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.04) 50%, rgba(41, 151, 255, 0.35) 100%);
   z-index: 2;
-  
-  /* Tambahan untuk mendukung interaksi drag */
+  box-shadow: 0 25px 50px -15px rgba(0, 0, 0, 0.8), 0 0 35px rgba(41, 151, 255, 0.12);
   cursor: grab;
-  user-select: none; /* Mencegah teks tak sengaja terblok saat men-drag gambar */
-  touch-action: none; /* Menghindari layar ikut terscroll saat gambar di-drag di HP */
+  user-select: none;
+  touch-action: none;
 }
 
-/* Kursor saat gambar sedang ditahan/ditarik */
 .imageWrapper:active {
   cursor: grabbing;
 }
@@ -204,19 +164,19 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid #0B132B; /* Menyesuaikan dengan warna background gelap websitemu */
+  border-radius: 25px;
+  background-color: #0c0c10;
 }
 
-/* Cahaya Estetik di belakang gambar */
+/* Ambient glow di belakang gambar */
 .glowEffect {
   position: absolute;
-  width: 400px;
-  height: 400px;
-  background: radial-gradient(circle, rgba(0, 122, 255, 0.4) 0%, rgba(0,0,0,0) 70%);
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, rgba(41, 151, 255, 0.25) 0%, transparent 70%);
   border-radius: 50%;
   z-index: 0;
-  filter: blur(40px);
+  filter: blur(45px);
 }
 
 /* Responsivitas untuk layar kecil/HP */
@@ -224,8 +184,8 @@
   .container {
     flex-direction: column-reverse;
     text-align: center;
-    padding: 6rem 5%;
-    gap: 4rem;
+    padding: 6rem 5% 3rem;
+    gap: 3rem;
   }
 
   .content {
@@ -233,10 +193,16 @@
   }
 
   .title {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    justify-content: center;
   }
 
   .imageWrapper {
+    width: 280px;
+    height: 280px;
+  }
+
+  .glowEffect {
     width: 300px;
     height: 300px;
   }

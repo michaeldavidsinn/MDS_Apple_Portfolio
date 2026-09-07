@@ -7,34 +7,34 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem 10%;
+    padding: 1.4rem 10%;
     z-index: 100;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
     background-color: transparent;
     box-sizing: border-box;
 }
 
 /* Class ini diaktifkan oleh React saat di-scroll */
 .scrolled {
-    padding: 1rem 10%;
-    background: rgba(11, 19, 43, 0.75); /* Warna gelap transparan */
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 0.9rem 10%;
+    background: rgba(5, 5, 7, 0.78);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .title {
-    font-size: 1.8rem;
+    font-size: 1.35rem;
     font-weight: 700;
     text-decoration: none;
-    color: #ffffff;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
+    color: #f5f5f7;
+    letter-spacing: -0.5px;
+    transition: opacity 0.2s ease;
 }
 
 .title:hover {
-    color: #007aff;
+    opacity: 0.8;
 }
 
 .menu {
@@ -44,22 +44,23 @@
 
 .menuItems {
     display: flex;
-    gap: 3rem;
+    gap: 2.5rem;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .menuItems a {
-    font-size: 1.1rem;
+    font-size: 0.92rem;
     font-weight: 500;
-    color: #a0aab2;
+    color: #86868b;
     text-decoration: none;
     position: relative;
-    transition: color 0.3s ease;
+    letter-spacing: -0.01em;
+    transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Animasi garis bawah biru saat link di-hover */
+/* Animasi garis bawah halus saat link di-hover */
 .menuItems a::after {
     content: '';
     position: absolute;
@@ -67,13 +68,13 @@
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: #007aff;
-    transition: width 0.3s ease;
+    background-color: #2997ff;
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
     border-radius: 2px;
 }
 
 .menuItems a:hover {
-    color: #ffffff;
+    color: #f5f5f7;
 }
 
 .menuItems a:hover::after {
@@ -88,38 +89,37 @@
 @media screen and (max-width: 830px) {
     .menuBtn {
         display: block;
-        width: 32px;
-        height: 32px;
+        width: 30px;
+        height: 30px;
         cursor: pointer;
-        z-index: 101; /* Pastikan ikon di atas menu overlay */
+        z-index: 101;
     }
 
-    /* Ubah menjadi Sidebar/Drawer yang mulus */
     .menuItems {
         position: fixed;
         top: 0;
-        right: -100%; /* Sembunyikan ke luar layar kanan secara default */
+        right: -100%;
         height: 100vh;
-        width: 70%;
-        max-width: 350px;
+        width: 75%;
+        max-width: 320px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 3rem;
-        background: rgba(11, 19, 43, 0.95);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1); /* Efek slide yang smooth */
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.3);
+        gap: 2.5rem;
+        background: rgba(10, 10, 14, 0.96);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-left: 1px solid rgba(255, 255, 255, 0.08);
+        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.6);
     }
 
-    /* Class untuk memunculkan menu dari samping (Slide-in) */
     .menuOpen {
         right: 0;
     }
 
     .menuItems a {
-        font-size: 1.5rem;
-        color: #ffffff;
+        font-size: 1.25rem;
+        color: #f5f5f7;
     }
 }

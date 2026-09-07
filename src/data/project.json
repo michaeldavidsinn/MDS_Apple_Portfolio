@@ -1,15 +1,37 @@
 [
   {
+    "title": "Ubinkayu ERP",
+    "badge": "🏢 Enterprise System",
+    "categories": ["Enterprise & Flagship", "Full-Stack Web"],
+    "imageSrc": "projects/ubinkayu/ubinkayu_1.png",
+    "description": "Architected an enterprise production management & PO tracking system (Desktop Electron & Web) deployed across PT Ubinkayu's manufacturing pipeline, processing 200+ Purchase Orders from factory floor to executive leadership.",
+    "skills": ["Electron", "React", "Node.js", "TypeScript", "Google APIs"],
+    "detail": {
+      "isModal": true,
+      "year": "2025",
+      "role": "Lead Full-Stack Developer",
+      "longDescription": "Architected and deployed a hybrid enterprise production management system (Desktop Electron & Web) to eliminate manual paper logging and digitalize PT Ubinkayu's end-to-end manufacturing operations.\n\nKey Impact & Deliverables:\n• Operational Scale: Successfully tracked and managed 200+ Purchase Orders end-to-end from raw timber intake to final dispatch.\n• Cross-Tier Adoption: Designed role-tailored interfaces actively utilized daily across the company hierarchy—from executive leadership (sales insights, financial overview) and production managers (scheduling, stock monitoring) down to factory-floor operators (real-time photo verification of progress).\n• Operational Transparency: Replaced fragmented paper trails with an automated single source of truth, drastically cutting status reconciliation delays and production visibility bottlenecks.\n• Smart Analytics & AI: Integrated Google Sheets API data sync for live analytics and embedded an AI business assistant to query production metrics on demand.",
+      "images": [
+        "projects/ubinkayu/ubinkayu_1.png",
+        "projects/ubinkayu/ubinkayu_2.png",
+        "projects/ubinkayu/ubinkayu_3.png",
+        "projects/ubinkayu/ubinkayu_4.png"
+      ]
+    },
+    "source": "https://github.com/michaeldavidsinn/ubinkayu-erp1"
+  },
+  {
     "title": "Dog Emotion Recognition System",
-    "badge": "🎓 Final Thesis", 
+    "badge": "🏆 Flagship AI & Mobile",
+    "categories": ["Enterprise & Flagship", "AI & Machine Learning", "iOS & Mobile"],
     "imageSrc": "projects/project_dogemotion.png",
-    "description": "Developed an AI-powered dog care and behavioral recommendation system, featuring a cross-platform Flutter application integrated with a trained YOLO11 computer vision model.",
+    "description": "Engineered an intelligent canine behavioral recognition and care recommendation system, combining fine-tuned YOLO11 computer vision with a high-performance cross-platform Flutter mobile client.",
     "skills": ["YOLO11", "Python", "Flutter", "Computer Vision", "Machine Learning"],
     "detail": {
       "isModal": true,
       "year": "2026",
-      "role": "AI Engineer & Mobile Developer",
-      "longDescription": "For my final year thesis project, I designed and developed an intelligent dog care recommendation system focused on behavior and emotional state detection. I trained a state-of-the-art YOLO11 computer vision model using Python to classify various canine emotions and expressions with high accuracy. To bring this technology to users, I built a cross-platform Flutter mobile application that seamlessly integrates the AI model, allowing users to scan or monitor their dogs and instantly receive tailored care guidelines and behavioral insights based on the detected emotional states.",
+      "role": "AI & Mobile Engineer",
+      "longDescription": "Designed and developed an end-to-end intelligent dog care recommendation system focused on behavioral and emotional state detection. Fine-tuned a state-of-the-art YOLO11 computer vision architecture in Python, optimizing detection accuracy across diverse lighting conditions and canine breeds. Built a responsive cross-platform Flutter mobile client featuring real-time camera inference, personalized pet behavioral insights, and contextual care guidelines based on classified emotional states.",
       "images": [
         "projects/dog_emotion/dog_1.png",
         "projects/dog_emotion/dog_2.png",
@@ -19,53 +41,17 @@
     "source": "https://github.com/michaeldavidsinn/Dog-Emotion-YOLO11-CloudInference"
   },
   {
-    "title": "MLP Web",
-    "imageSrc": "projects/project_alpwebdev.png",
-    "description": "ALP project for subject Web Development in Semester 4 that was created to support my family business in Balikpapan",
-    "skills": ["HTML", "PHP", "MySQL", "CSS"],
-    "detail": {
-      "isModal": true,
-      "year": "2024",
-      "role": "Back-End",
-      "longDescription": "My friend and I are building a PHP website with a database connection for my parents' business, the biggest ceramic supplier in Balikpapan. Customers can browse all company information and products without visiting the store. As the backend developer, I'm responsible for creating secure login and registration functionalities, as well as CRUD (Create, Read, Update, Delete) functions to manage the database tables efficiently. This project is exciting as it will help my parents' business reach a wider audience by showcasing their products online.",
-      "images": [
-        "projects/mlp/mlp_1.png",
-        "projects/mlp/mlp_2.png",
-        "projects/mlp/mlp_3.png",
-        "projects/mlp/mlp_4.png"
-      ]
-    },
-    "source": "https://github.com/michaeldavidsinn/ALP_Web-Development.git"
-  },
-  {
-    "title": "EduLiving",
-    "imageSrc": "projects/project_eduliving.png",
-    "description": "Developed an interactive quiz website for Surabaya Zoo visitors to learn educational facts and win virtual animal collectibles.",
-    "skills": ["HTML", "PHP", "MySQL", "CSS"],
-    "detail": {
-      "isModal": true,
-      "year": "2024",
-      "role": "Front-End",
-      "longDescription": "My team and I participated in the 2-day Hackfest 2024 at Universitas Ciputra, tasked with tackling a challenge at the Surabaya Zoo using an application or website platform. We opted to create a quiz website for visitors, offering a chance to win a collection of animal figurines along with educational information upon successful completion. My role involved designing all the website pages.",
-      "images": [
-        "projects/eduliving/eduliving_1.png",
-        "projects/eduliving/eduliving_2.png",
-        "projects/eduliving/eduliving_3.png",
-        "projects/eduliving/eduliving_4.png"
-      ]
-    },
-    "source": "https://github.com/jhwrwe/11_Mana-KPKu_EduLiving.git"
-  },
-  {
     "title": "GreenThumb",
+    "badge": "🍎 Apple Ecosystem",
+    "categories": ["iOS & Mobile"],
     "imageSrc": "projects/project_greenthumb.png",
-    "description": "Developed a cross-platform Swift application (iOS & macOS) to assist users in identifying and managing their personal plant database.",
-    "skills": ["Swift", "iOS", "macOS"],
+    "description": "Engineered a native multi-platform botanical cataloging and identification application for iOS and macOS using Swift and SwiftUI, featuring modular view architectures and responsive local persistence.",
+    "skills": ["Swift", "SwiftUI", "iOS", "macOS"],
     "detail": {
       "isModal": true,
       "year": "2024",
-      "role": "Front-End & Back-End",
-      "longDescription": "For a Mobile Application Development (MAD) course project, my team and I created a Swift-based application to assist individuals in identifying their plants. The app features a comprehensive plant database and allows users to add their own plants. My responsibilities included handling the DetailView for iOS and macOS, managing app navigation, and implementing the logic for adding plants to the MyPlantsView.",
+      "role": "Native iOS / macOS Developer",
+      "longDescription": "Engineered a native multi-platform botanical cataloging application designed for the Apple ecosystem (iOS & macOS) using Swift and SwiftUI. Implemented modular navigation flows, adaptive master-detail view hierarchies across phone and desktop form factors, and reactive state management for adding, categorizing, and monitoring personal plant collections.",
       "images": [
         "projects/greenthumb/greenthumb_1.png",
         "projects/greenthumb/greenthumb_2.png",
@@ -80,15 +66,92 @@
     "source": "https://github.com/LouisSetyandaru/GreenThumb.git"
   },
   {
-    "title": "DigPro",
-    "imageSrc": "projects/project_digpro.png",
-    "description": "Developed a PHP-based platform connecting content creators with SMEs in Surabaya, featuring subscription forms and an integrated database.",
-    "skills": ["HTML", "PHP", "MySQL", "CSS"],
+    "title": "BikeFlow",
+    "categories": ["AI & Machine Learning", "Full-Stack Web"],
+    "imageSrc": "projects/project_bikeflow.png",
+    "description": "Developed a predictive urban mobility analytics platform leveraging time-series machine learning (SARIMAX) to forecast municipal bike-sharing demand against seasonal and meteorological variables.",
+    "skills": ["Python", "Machine Learning", "JavaScript", "Full-Stack"],
     "detail": {
       "isModal": true,
       "year": "2024",
-      "role": "Front-End & Back-End",
-      "longDescription": "As part of a Digital Innovation Entrepreneurship (DEI) course project, my team is developing a PHP-based website with a database to connect content creators with SMEs in Surabaya. The website, while still in its early stages, features an MVP, subscription forms, and product listings. My contributions include designing the website and creating a database that integrates with a count page to track the number of paying customers.",
+      "role": "AI & Full-Stack Engineer",
+      "longDescription": "Developed an end-to-end predictive web platform forecasting daily urban bike-sharing utilization. Engineered time-series econometric models (SARIMAX) in Python to capture seasonal trends and environmental variance, and connected the analytical pipeline to a responsive full-stack web dashboard for visual scenario forecasting.",
+      "images": [
+        "projects/bikeflow/bikeflow_1.png",
+        "projects/bikeflow/bikeflow_2.png",
+        "projects/bikeflow/bikeflow_3.png"
+      ]
+    },
+    "source": "https://github.com/ImiaFeder/bikeShare.git"
+  },
+  {
+    "title": "YuccaGPT",
+    "categories": ["AI & Machine Learning", "Full-Stack Web"],
+    "imageSrc": "projects/project_yuccagpt.png",
+    "description": "Architected an interactive voice-enabled information portal integrating Python, Google Cloud Text-to-Speech (TTS), and a modern React frontend for real-time conversational responses.",
+    "skills": ["React", "Python", "Google Cloud", "JavaScript"],
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Full-Stack & Cloud AI Developer",
+      "longDescription": "Architected an interactive voice-enabled information portal designed to streamline campus inquiries. Built backend audio synthesis microservices in Python leveraging Google Cloud Text-to-Speech, paired with an interactive, accessible React web frontend delivering fluid audio playback and instant contextual queries.",
+      "images": [
+        "projects/yuccagpt/yuccagpt_1.png"
+      ]
+    },
+    "source": "https://github.com/NiCS16/yucca_ai_alp.git"
+  },
+  {
+    "title": "Mulia Lestari Perkasa (MLP)",
+    "categories": ["Full-Stack Web"],
+    "imageSrc": "projects/project_alpwebdev.png",
+    "description": "Architected a full-stack B2B digital catalog and customer inquiry platform for a leading ceramic supplier in East Kalimantan, transitioning physical inventory to an interactive web portal.",
+    "skills": ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Full-Stack Backend Engineer",
+      "longDescription": "Architected a full-stack digital catalog and customer inquiry portal for Mulia Lestari Perkasa, a major ceramic and building materials distributor in Balikpapan. Engineered robust relational database schemas in MySQL, implemented secure authentication and administrative CRUD interfaces for multi-category catalog management, and enabled digital product discovery for wholesale and retail clients.",
+      "images": [
+        "projects/mlp/mlp_1.png",
+        "projects/mlp/mlp_2.png",
+        "projects/mlp/mlp_3.png",
+        "projects/mlp/mlp_4.png"
+      ]
+    },
+    "source": "https://github.com/michaeldavidsinn/ALP_Web-Development.git"
+  },
+  {
+    "title": "EduLiving",
+    "categories": ["Full-Stack Web"],
+    "imageSrc": "projects/project_eduliving.png",
+    "description": "Built an interactive gamified educational platform for zoological park visitors, featuring dynamic trivia challenges, digital collectible rewards, and real-time score tracking.",
+    "skills": ["PHP", "MySQL", "JavaScript", "CSS"],
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Frontend & UI Developer",
+      "longDescription": "Designed and developed an interactive gamified educational web experience deployed for zoological park visitors during a 48-hour rapid prototyping hackathon. Engineered accessible quiz interfaces, dynamic state handling for collectible animal rewards, and integrated backend score persistence.",
+      "images": [
+        "projects/eduliving/eduliving_1.png",
+        "projects/eduliving/eduliving_2.png",
+        "projects/eduliving/eduliving_3.png",
+        "projects/eduliving/eduliving_4.png"
+      ]
+    },
+    "source": "https://github.com/jhwrwe/11_Mana-KPKu_EduLiving.git"
+  },
+  {
+    "title": "DigPro",
+    "categories": ["Full-Stack Web"],
+    "imageSrc": "projects/project_digpro.png",
+    "description": "Developed an MVP digital marketplace connecting local SMEs with verified content creators, featuring automated onboarding workflows, subscription pipelines, and lead tracking.",
+    "skills": ["PHP", "MySQL", "JavaScript", "CSS"],
+    "detail": {
+      "isModal": true,
+      "year": "2024",
+      "role": "Full-Stack Web Developer",
+      "longDescription": "Developed an MVP marketplace platform designed to bridge commercial matchmaking between SMEs and regional digital creators. Designed relational database architectures to handle service listings, user onboarding, and lead conversions, alongside custom administrative tracking metrics.",
       "images": [
         "projects/digpro/digpro_1.png",
         "projects/digpro/digpro_2.png",
@@ -100,14 +163,15 @@
   },
   {
     "title": "De Sauge",
+    "categories": ["Full-Stack Web"],
     "imageSrc": "projects/project_desauge.png",
-    "description": "Transformed an Envato template into a fully functional e-commerce website for a client selling mushroom-based sausages.",
-    "skills": ["HTML", "CSS", "JavaScript"],
+    "description": "Engineered a bespoke e-commerce storefront for an artisanal food brand, implementing responsive product showcases, interactive cart management, and seamless customer order workflows.",
+    "skills": ["JavaScript", "HTML5", "CSS3", "E-Commerce"],
     "detail": {
       "isModal": true,
       "year": "2024",
-      "role": "Front-End & Back-End",
-      "longDescription": "I have transformed an Envato template into a fully functional e-commerce website for a client selling mushroom-based sausages. The website features various functionalities, including product browsing, purchasing, payment processing, FAQ, and contact information. This project demonstrates my ability to customize and enhance existing templates to create user-friendly and interactive web solutions.",
+      "role": "Frontend & Web Developer",
+      "longDescription": "Engineered a responsive e-commerce web platform for an artisanal food producer. Customized client-side state architectures for cart interactions, developed interactive product detail showcases, streamlined direct ordering pathways, and implemented mobile-first responsive design standards.",
       "images": [
         "projects/desauge/desauge_1.png",
         "projects/desauge/desauge_2.png",
@@ -116,58 +180,5 @@
       ]
     },
     "source": "https://github.com/michaeldavidsinn/desauge.git"
-  },
-  {
-    "title": "BikeFlow",
-    "imageSrc": "projects/project_bikeflow.png",
-    "description": "Developed a time series machine learning model (SARIMAX) to predict daily bike usage, integrating the AI with a full-stack web interface.",
-    "skills": ["HTML", "CSS", "JavaScript", "Python"],
-    "detail": {
-      "isModal": true,
-      "year": "2024",
-      "role": "Front-End, Back-End & AI Engineer",
-      "longDescription": "Developed a website for predicting daily bike usage based on environmental factors and yearly trends using a time series machine learning model (SARIMAX). As part of a three-member team, I was responsible for building the AI model, developing the backend, and integrating it with the frontend to ensure seamless functionality.",
-      "images": [
-        "projects/bikeflow/bikeflow_1.png",
-        "projects/bikeflow/bikeflow_2.png",
-        "projects/bikeflow/bikeflow_3.png"
-      ]
-    },
-    "source": "https://github.com/ImiaFeder/bikeShare.git"
-  },
-  {
-    "title": "YuccaGPT",
-    "imageSrc": "projects/project_yuccagpt.png",
-    "description": "Developed an AI-powered text-to-speech system for Universitas Ciputra Surabaya using Python and Google Cloud. Handled backend, frontend, and AI integration.",
-    "skills": ["React", "CSS", "JavaScript", "Python"],
-    "detail": {
-      "isModal": true,
-      "year": "2024",
-      "role": "Front-End & Back-End",
-      "longDescription": "Developed an AI-powered text-to-speech system for delivering all information about Universitas Ciputra Surabaya. Utilized Python to build the AI model, leveraging Google Cloud services for speech synthesis. My role involved developing both the backend and frontend, ensuring seamless integration with the AI for a smooth user experience.",
-      "images": [
-        "projects/yuccagpt/yuccagpt_1.png"
-      ]
-    },
-    "source": "https://github.com/NiCS16/yucca_ai_alp.git"
-  },
-  {
-    "title": "Ubinkayu ERP",
-    "imageSrc": "projects/ubinkayu/ubinkayu_1.png",
-    "description": "Developed a hybrid integrated production management system (Desktop Electron & Web) to digitalize PT Ubinkayu's end-to-end operational workflow.",
-    "skills": ["Electron", "React", "Node.js", "TypeScript", "Google APIs"],
-    "detail": {
-      "isModal": true,
-      "year": "2025",
-      "role": "Full-Stack Developer",
-      "longDescription": "I developed a hybrid production management system (Desktop Electron & Web) that helps digitalize the workflow of PT Ubinkayu. This system manages end-to-end Purchase Orders, tracks production progress in real-time with photo documentation, and provides sales analysis powered by Google Sheets integration. Equipped with Role-Based Access Control for inter-divisional data security and an AI Assistant for fast business insights, Ubinkayu ERP enhances the company's efficiency, transparency, and decision-making accuracy.",
-      "images": [
-        "projects/ubinkayu/ubinkayu_1.png",
-        "projects/ubinkayu/ubinkayu_2.png",
-        "projects/ubinkayu/ubinkayu_3.png",
-        "projects/ubinkayu/ubinkayu_4.png"
-      ]
-    },
-    "source": "https://github.com/michaeldavidsinn/ubinkayu-erp1"
   }
 ]

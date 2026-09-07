@@ -1,44 +1,44 @@
 [
   {
     "name": "Charlene Wijaya",
-    "category": "Personal Portfolio",
-    "description": "A visually engaging portfolio crafted to showcase visual communication design projects and creative assets.",
-    "skills": ["HTML", "JavaScript", "CSS"],
+    "category": "Creative Portfolio",
+    "description": "Visual communication portfolio designed with high-fidelity media galleries and interactive art direction showcases.",
+    "skills": ["HTML5", "JavaScript", "CSS3"],
     "link": "https://github.com/michaeldavidsinn/charportos"
   },
   {
     "name": "Cliffton Wijaya",
-    "category": "Personal Portfolio",
-    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
-    "skills": ["HTML", "JavaScript", "CSS"],
+    "category": "Personal Platform",
+    "description": "Clean, high-performance personal web platform focused on editorial typography, crisp spacing, and minimal load times.",
+    "skills": ["HTML5", "JavaScript", "CSS3"],
     "link": "https://github.com/michaeldavidsinn/cliffton-wijaya"
   },
   {
     "name": "Dinda Zoraya",
-    "category": "Personal Portfolio",
-    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
-    "skills": ["HTML", "JavaScript", "CSS"],
+    "category": "Interactive Portfolio",
+    "description": "Creative showcase featuring dynamic micro-interactions and smooth scroll experiences tailored for multimedia storytelling.",
+    "skills": ["HTML5", "JavaScript", "CSS3"],
     "link": "https://github.com/michaeldavidsinn/dindaportos"
   },
   {
     "name": "Jonathan Lienanto",
-    "category": "Personal Portfolio",
-    "description": "A modern dynamic web portfolio built to deliver a highly interactive user experience.",
-    "skills": ["React", "JavaScript", "HTML", "CSS"],
+    "category": "Dynamic Web App",
+    "description": "Interactive web application featuring component-driven architecture, modular state management, and custom UI components.",
+    "skills": ["React", "JavaScript", "CSS3"],
     "link": "https://github.com/michaeldavidsinn/jonathanportos"
   },
   {
     "name": "Kenjo Kwee",
-    "category": "Personal Portfolio",
-    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
-    "skills": ["JavaScript", "HTML", "CSS"],
+    "category": "Branding & Portfolio",
+    "description": "Modern personal branding platform highlighting technical projects with responsive layouts across all device viewports.",
+    "skills": ["JavaScript", "HTML5", "CSS3"],
     "link": "https://github.com/michaeldavidsinn/kenjoportos"
   },
   {
     "name": "Nicklaus Arthur",
-    "category": "Personal Portfolio",
-    "description": "A fully responsive personal portfolio built with smooth animations and a modern layout.",
-    "skills": ["JavaScript", "HTML", "CSS"],
+    "category": "Professional Showcase",
+    "description": "Sleek digital showcase built with optimized DOM structure, lightweight animations, and intuitive project presentation.",
+    "skills": ["JavaScript", "HTML5", "CSS3"],
     "link": "https://github.com/michaeldavidsinn/nicklausportos"
   }
 ]
