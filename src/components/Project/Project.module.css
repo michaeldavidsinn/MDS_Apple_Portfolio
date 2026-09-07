@@ -25,6 +25,54 @@
   line-height: 1.6;
 }
 
+/* Apple Pill Filter Tabs */
+.filterTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 0.4rem;
+  border-radius: 980px;
+  width: fit-content;
+  backdrop-filter: blur(16px);
+}
+
+.tabBtn {
+  position: relative;
+  background: transparent;
+  border: none;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: #86868b;
+  cursor: pointer;
+  border-radius: 980px;
+  transition: color 0.2s ease;
+  z-index: 1;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  letter-spacing: -0.01em;
+}
+
+.tabBtn:hover {
+  color: #f5f5f7;
+}
+
+.tabActive {
+  color: #ffffff !important;
+}
+
+.activeTabBg {
+  position: absolute;
+  inset: 0;
+  background: #0071e3;
+  border-radius: 980px;
+  z-index: -1;
+  box-shadow: 0 4px 16px rgba(0, 113, 227, 0.4);
+}
+
 /* Grid Layout */
 .projectsGrid {
   display: grid;

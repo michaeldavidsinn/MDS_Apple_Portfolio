@@ -35,6 +35,17 @@
     "imageSrc": "history/ubinkayu.png"
   },
   {
+    "role": "Freelance Web Developer",
+    "organisation": "Self-Employed",
+    "startDate": "July 2023",
+    "endDate": "December 2024",
+    "experiences": [
+      "Engineered and shipped bespoke web platforms and responsive portfolios for 6+ creative professionals and commercial clients with 100% on-time delivery",
+      "Architected lightweight frontends in React, modern JavaScript, and CSS3, ensuring cross-browser responsiveness, high performance, and clean DOM structures"
+    ],
+    "imageSrc": "skills/react.png"
+  },
+  {
     "role": "Data Analyst & Growth Specialist",
     "organisation": "Foy Clinic",
     "startDate": "June 2024",

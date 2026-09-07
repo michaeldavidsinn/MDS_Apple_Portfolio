@@ -1,24 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { getImageurl } from '../../utils';
 import styles from "./Contact.module.css";
 
 export const Contact = () => {
+    const [copied, setCopied] = useState(false);
+
+    const handleCopyEmail = (e) => {
+        e.preventDefault();
+        navigator.clipboard.writeText("michaelsin04@gmail.com");
+        setCopied(true);
+        setTimeout(() => setCopied(false), 2200);
+    };
+
     return (
         <footer id="contact" className={styles.container}>
             <motion.div 
                 className={styles.content}
-                initial={{ opacity: 0, y: 50 }}
+                initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 0.6, ease: "easeOut" }}
                 viewport={{ once: true }}
             >
                 {/* Bagian Kiri: Pesan Ajakan */}
                 <div className={styles.text}>
                     <h2>Let's Connect</h2>
                     <p>
-                        Whether you have a project in mind, a question about my work, 
-                        or just want to say hi, my inbox is always open!
+                        Whether you have a project in mind, a potential opportunity, 
+                        or just want to discuss technology, my inbox is always open.
                     </p>
                 </div>
                 
@@ -28,7 +37,16 @@ export const Contact = () => {
                         <div className={styles.iconWrapper}>
                             <img src={getImageurl("contact/emailIcon.png")} alt="Email icon" />
                         </div>
-                        <a href="mailto:michaelsin04@gmail.com">michaelsin04@gmail.com</a>
+                        <div className={styles.emailWrapper}>
+                            <a href="mailto:michaelsin04@gmail.com">michaelsin04@gmail.com</a>
+                            <button 
+                                onClick={handleCopyEmail} 
+                                className={styles.copyBtn}
+                                aria-label="Copy email to clipboard"
+                            >
+                                {copied ? "Copied! ✓" : "Copy"}
+                            </button>
+                        </div>
                     </li>
                     <li className={styles.link}>
                         <div className={styles.iconWrapper}>

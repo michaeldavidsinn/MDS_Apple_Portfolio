@@ -1,41 +1,72 @@
-import { motion } from "framer-motion";
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 import styles from "./Project.module.css";
 import project from "../../data/project.json";
 import { ProjectCard } from "./ProjectCard";
-import { ClientProjects } from "./ClientProjects";
+
+const CATEGORIES = [
+  "All",
+  "Enterprise & Flagship",
+  "AI & Machine Learning",
+  "iOS & Mobile",
+  "Full-Stack Web"
+];
 
 export const Project = () => {
-    // Varian animasi untuk grid pembungkus (efek muncul bergantian)
-    const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
-            opacity: 1,
-            transition: { staggerChildren: 0.2 }
-        }
-    };
+  const [activeCategory, setActiveCategory] = useState("All");
 
-    return (
-        <section className={styles.container} id="projects">
-            <div className={styles.header}>
-                <h2 className={styles.title}>Projects</h2>
-                <p className={styles.subtitle}>
-                    A showcase of my recent work, ranging from full-stack web applications and complex AI behavior detection models to sleek mobile experiences.
-                </p>
-            </div>
-            
-            <motion.div 
-                className={styles.projectsGrid}
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true, margin: "-100px" }}
+  const filteredProjects = activeCategory === "All"
+    ? project
+    : project.filter(p => p.categories && p.categories.includes(activeCategory));
+
+  return (
+    <section className={styles.container} id="projects">
+      <div className={styles.header}>
+        <h2 className={styles.title}>Projects</h2>
+        <p className={styles.subtitle}>
+          Curated engineering solutions across enterprise production systems, applied machine learning, native Apple platforms, and scalable web platforms.
+        </p>
+
+        {/* Filter Tabs */}
+        <div className={styles.filterTabs}>
+          {CATEGORIES.map((cat) => (
+            <button
+              key={cat}
+              className={`${styles.tabBtn} ${activeCategory === cat ? styles.tabActive : ""}`}
+              onClick={() => setActiveCategory(cat)}
             >
-                {project.map((proj, id) => (
-                    // Data objek proyek langsung dioper ke ProjectCard
-                    <ProjectCard key={id} project={proj} />
-                ))}
+              {cat}
+              {activeCategory === cat && (
+                <motion.div
+                  layoutId="activeFilterTab"
+                  className={styles.activeTabBg}
+                  transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                />
+              )}
+            </button>
+          ))}
+        </div>
+      </div>
+      
+      <motion.div 
+        layout
+        className={styles.projectsGrid}
+      >
+        <AnimatePresence mode="popLayout">
+          {filteredProjects.map((proj) => (
+            <motion.div
+              layout
+              key={proj.title}
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              exit={{ opacity: 0, scale: 0.95 }}
+              transition={{ duration: 0.3 }}
+            >
+              <ProjectCard project={proj} />
             </motion.div>
-            <ClientProjects/>
-        </section>
-    );
+          ))}
+        </AnimatePresence>
+      </motion.div>
+    </section>
+  );
 };

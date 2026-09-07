@@ -1,0 +1,37 @@
+.backToTopBtn {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(18, 18, 22, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #f5f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 99;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5), 0 0 16px rgba(41, 151, 255, 0.1);
+  transition: background 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
+  outline: none;
+}
+
+.backToTopBtn:hover {
+  background: rgba(41, 151, 255, 0.18);
+  border-color: rgba(41, 151, 255, 0.4);
+  color: #2997ff;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(41, 151, 255, 0.25);
+}
+
+@media screen and (max-width: 768px) {
+  .backToTopBtn {
+    bottom: 1.8rem;
+    right: 1.5rem;
+    width: 40px;
+    height: 40px;
+  }
+}

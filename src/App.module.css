@@ -11,3 +11,14 @@
   color: var(--color-text);
   overflow-x: hidden;
 }
+
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background: linear-gradient(90deg, #2997ff, #64d2ff);
+  transform-origin: 0%;
+  z-index: 9999;
+}

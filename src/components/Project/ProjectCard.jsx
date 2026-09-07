@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { getImageurl } from "../../utils";
 import styles from "./ProjectCard.module.css";
@@ -9,8 +9,28 @@ export const ProjectCard = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  // STATE BARU: Untuk menyimpan gambar mana yang sedang diperbesar
-  const [selectedImage, setSelectedImage] = useState(null);
+  // State untuk melacak indeks gambar yang sedang dibuka di lightbox
+  const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+
+  // Keyboard navigation untuk lightbox (Escape, ArrowLeft, ArrowRight)
+  useEffect(() => {
+    if (selectedImageIndex === null) return;
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setSelectedImageIndex(null);
+      } else if (e.key === "ArrowRight") {
+        if (detail?.images?.length) {
+          setSelectedImageIndex((prev) => (prev + 1) % detail.images.length);
+        }
+      } else if (e.key === "ArrowLeft") {
+        if (detail?.images?.length) {
+          setSelectedImageIndex((prev) => (prev - 1 + detail.images.length) % detail.images.length);
+        }
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedImageIndex, detail]);
 
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -130,8 +150,7 @@ export const ProjectCard = ({
                         src={getImageurl(img)}
                         alt={`${title} Preview ${idx + 1}`}
                         className={styles.gridImage}
-                        // AKSI BARU: Saat gambar diklik, set sebagai selectedImage
-                        onClick={() => setSelectedImage(getImageurl(img))}
+                        onClick={() => setSelectedImageIndex(idx)}
                       />
                     ))}
                   </div>
@@ -142,29 +161,58 @@ export const ProjectCard = ({
         )}
       </AnimatePresence>
 
-      {/* 3. FITUR BARU: LIGHTBOX UNTUK ZOOM GAMBAR */}
+      {/* 3. LIGHTBOX UNTUK ZOOM GAMBAR DENGAN NEXT / PREV & KEYBOARD SUPPORT */}
       <AnimatePresence>
-        {selectedImage && (
-          // Jika overlay hitam diklik, gambar akan tertutup (selectedImage kembali null)
+        {selectedImageIndex !== null && detail?.images?.[selectedImageIndex] && (
           <div
             className={styles.lightboxOverlay}
-            onClick={() => setSelectedImage(null)}
+            onClick={() => setSelectedImageIndex(null)}
           >
             <button
               className={styles.lightboxCloseBtn}
-              onClick={() => setSelectedImage(null)}
+              onClick={() => setSelectedImageIndex(null)}
+              aria-label="Close Lightbox"
             >
               ×
             </button>
+
+            {detail.images.length > 1 && (
+              <>
+                <button
+                  className={`${styles.lightboxNavBtn} ${styles.lightboxPrev}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedImageIndex((prev) => (prev - 1 + detail.images.length) % detail.images.length);
+                  }}
+                  aria-label="Previous Image"
+                >
+                  ‹
+                </button>
+                <button
+                  className={`${styles.lightboxNavBtn} ${styles.lightboxNext}`}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setSelectedImageIndex((prev) => (prev + 1) % detail.images.length);
+                  }}
+                  aria-label="Next Image"
+                >
+                  ›
+                </button>
+                <div className={styles.lightboxCounter} onClick={(e) => e.stopPropagation()}>
+                  {selectedImageIndex + 1} / {detail.images.length}
+                </div>
+              </>
+            )}
+
             <motion.img
-              src={selectedImage}
-              alt="Enlarged view"
+              key={selectedImageIndex}
+              src={getImageurl(detail.images[selectedImageIndex])}
+              alt={`${title} enlarged view ${selectedImageIndex + 1}`}
               className={styles.lightboxImage}
-              initial={{ opacity: 0, scale: 0.8 }}
+              initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              exit={{ opacity: 0, scale: 0.8 }}
-              transition={{ duration: 0.3 }}
-              // Mencegah gambar tertutup saat gambar itu sendiri yang diklik
+              exit={{ opacity: 0, scale: 0.9 }}
+              transition={{ duration: 0.25 }}
               onClick={(e) => e.stopPropagation()}
             />
           </div>

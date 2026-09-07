@@ -31,8 +31,12 @@ export const Hero = () => {
         initial="hidden"
         animate="visible"
       >
-        <motion.div variants={itemVariants} className={styles.badge}>
-          Software Engineer
+        <motion.div variants={itemVariants} className={styles.statusBadge}>
+          <span className={styles.statusDotWrapper}>
+            <span className={styles.statusDotPing} />
+            <span className={styles.statusDot} />
+          </span>
+          <span>Available for Software Engineering & iOS Roles</span>
         </motion.div>
 
         <motion.h1 variants={itemVariants} className={styles.title}>
@@ -73,6 +77,24 @@ export const Hero = () => {
           >
             View Resume
           </motion.a>
+        </motion.div>
+
+        {/* Apple-Style Quick Metrics / Impact Highlights */}
+        <motion.div variants={itemVariants} className={styles.statsBar}>
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>Apple Dev Academy</span>
+            <span className={styles.statLabel}>Cohort 2026</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>200+ Industrial POs</span>
+            <span className={styles.statLabel}>Production ERP</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
+            <span className={styles.statValue}>Applied AI & iOS</span>
+            <span className={styles.statLabel}>YOLO11 • Swift/SwiftUI</span>
+          </div>
         </motion.div>
       </motion.div>
 

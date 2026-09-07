@@ -102,7 +102,7 @@
     "source": "https://github.com/NiCS16/yucca_ai_alp.git"
   },
   {
-    "title": "Mulia Lestari Perkasa (MLP)",
+    "title": "Mandiri Langgeng Perkasa (MLP)",
     "categories": ["Full-Stack Web"],
     "imageSrc": "projects/project_alpwebdev.png",
     "description": "Architected a full-stack B2B digital catalog and customer inquiry platform for a leading ceramic supplier in East Kalimantan, transitioning physical inventory to an interactive web portal.",
@@ -111,7 +111,7 @@
       "isModal": true,
       "year": "2024",
       "role": "Full-Stack Backend Engineer",
-      "longDescription": "Architected a full-stack digital catalog and customer inquiry portal for Mulia Lestari Perkasa, a major ceramic and building materials distributor in Balikpapan. Engineered robust relational database schemas in MySQL, implemented secure authentication and administrative CRUD interfaces for multi-category catalog management, and enabled digital product discovery for wholesale and retail clients.",
+      "longDescription": "Architected a full-stack digital catalog and customer inquiry portal for Mandiri Langgeng Perkasa, a major ceramic and building materials distributor in Balikpapan. Engineered robust relational database schemas in MySQL, implemented secure authentication and administrative CRUD interfaces for multi-category catalog management, and enabled digital product discovery for wholesale and retail clients.",
       "images": [
         "projects/mlp/mlp_1.png",
         "projects/mlp/mlp_2.png",
