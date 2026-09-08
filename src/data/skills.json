@@ -6,17 +6,22 @@
   },
   {
     "title": "PyTorch",
-    "imageSrc": "skills/pytorch.svg",
+    "imageSrc": "skills/pytorch.png",
+    "category": "ai"
+  },
+  {
+    "title": "Core ML",
+    "imageSrc": "skills/coreml.png.webp",
     "category": "ai"
   },
   {
     "title": "OpenCV",
-    "imageSrc": "skills/opencv.svg",
+    "imageSrc": "skills/opencv.png",
     "category": "ai"
   },
   {
     "title": "Scikit-Learn",
-    "imageSrc": "skills/scikitlearn.svg",
+    "imageSrc": "skills/scikitlearn.png",
     "category": "ai"
   },
   {
@@ -106,7 +111,7 @@
   },
   {
     "title": "Google Cloud",
-    "imageSrc": "skills/googlecloud.svg",
+    "imageSrc": "skills/googlecloud.png",
     "category": "web"
   }
 ]
