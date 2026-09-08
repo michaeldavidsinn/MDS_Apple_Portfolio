@@ -1,11 +1,64 @@
 [
   {
+    "title": "BasketYuk",
+    "badge": "📱 App Store | 100+ Downloads",
+    "categories": [
+      "iOS & Mobile",
+      "Full-Stack Web"
+    ],
+    "imageSrc": "projects/project_basketyuk.png",
+    "description": "A live digital ecosystem for the Indonesian basketball community. Currently available on the App Store with 100+ downloads, featuring tournament tracking, club management, and ticketing.",
+    "appStoreUrl": "https://apps.apple.com/id/app/basketyuk-id/id6763760296",
+    "status": "active",
+    "skills": [
+      "Flutter",
+      "Laravel",
+      "MySQL",
+      "AWS S3",
+      "Payment Gateway"
+    ],
+    "detail": {
+      "isModal": true,
+      "portraitLayout": true,
+      "year": "2024 - Present",
+      "role": "Mobile & Backend Developer",
+      "longDescription": "Engineered BasketYuk, an end-to-end digital ecosystem tailored for the Indonesian basketball community. Architected a multi-platform mobile application utilizing Flutter for seamless user experiences across iOS and Android. Built a robust backend infrastructure with Laravel 12 and MySQL, supporting real-time tournament brackets, live match statistics, player transfers, and digital ID generation. Integrated Tripay SDK for automated e-ticket transactions and AWS S3 for scalable media storage. The platform effectively bridges event organizers, clubs, athletes, and fans into a single cohesive ecosystem.",
+      "images": [
+        "projects/basketyuk/basketyuk_1.PNG",
+        "projects/basketyuk/basketyuk_2.PNG",
+        "projects/basketyuk/basketyuk_3.PNG",
+        "projects/basketyuk/basketyuk_4.PNG",
+        "projects/basketyuk/basketyuk_5.PNG"
+      ]
+    },
+    "source": [
+      {
+        "label": "App Source",
+        "url": "https://github.com/michaeldavidsinn/basketyuk_app.git"
+      },
+      {
+        "label": "API Source",
+        "url": "https://github.com/michaeldavidsinn/basketyuk_api.git"
+      }
+    ],
+    "demo": "https://basketyuk.id/"
+  },
+  {
     "title": "Ubinkayu ERP",
     "badge": "🏢 Enterprise System",
-    "categories": ["Enterprise & Flagship", "Full-Stack Web"],
+    "categories": [
+      "Enterprise & Flagship",
+      "Full-Stack Web"
+    ],
     "imageSrc": "projects/ubinkayu/ubinkayu_1.png",
     "description": "Architected an enterprise production management & PO tracking system (Desktop Electron & Web) deployed across PT Ubinkayu's manufacturing pipeline, processing 200+ Purchase Orders from factory floor to executive leadership.",
-    "skills": ["Electron", "React", "Node.js", "TypeScript", "Google APIs"],
+    "skills": [
+      "Electron",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "Google APIs"
+    ],
     "detail": {
       "isModal": true,
       "year": "2025",
@@ -23,10 +76,20 @@
   {
     "title": "Dog Emotion Recognition System",
     "badge": "🏆 Flagship AI & Mobile",
-    "categories": ["Enterprise & Flagship", "AI & Machine Learning", "iOS & Mobile"],
+    "categories": [
+      "Enterprise & Flagship",
+      "AI & Machine Learning",
+      "iOS & Mobile"
+    ],
     "imageSrc": "projects/project_dogemotion.png",
     "description": "Engineered an intelligent canine behavioral recognition and care recommendation system, combining fine-tuned YOLO11 computer vision with a high-performance cross-platform Flutter mobile client.",
-    "skills": ["YOLO11", "Python", "Flutter", "Computer Vision", "Machine Learning"],
+    "skills": [
+      "YOLO11",
+      "Python",
+      "Flutter",
+      "Computer Vision",
+      "Machine Learning"
+    ],
     "detail": {
       "isModal": true,
       "year": "2026",
@@ -43,10 +106,17 @@
   {
     "title": "GreenThumb",
     "badge": "🍎 Apple Ecosystem",
-    "categories": ["iOS & Mobile"],
+    "categories": [
+      "iOS & Mobile"
+    ],
     "imageSrc": "projects/project_greenthumb.png",
     "description": "Engineered a native multi-platform botanical cataloging and identification application for iOS and macOS using Swift and SwiftUI, featuring modular view architectures and responsive local persistence.",
-    "skills": ["Swift", "SwiftUI", "iOS", "macOS"],
+    "skills": [
+      "Swift",
+      "SwiftUI",
+      "iOS",
+      "macOS"
+    ],
     "detail": {
       "isModal": true,
       "year": "2024",
@@ -67,10 +137,18 @@
   },
   {
     "title": "BikeFlow",
-    "categories": ["AI & Machine Learning", "Full-Stack Web"],
+    "categories": [
+      "AI & Machine Learning",
+      "Full-Stack Web"
+    ],
     "imageSrc": "projects/project_bikeflow.png",
     "description": "Developed a predictive urban mobility analytics platform leveraging time-series machine learning (SARIMAX) to forecast municipal bike-sharing demand against seasonal and meteorological variables.",
-    "skills": ["Python", "Machine Learning", "JavaScript", "Full-Stack"],
+    "skills": [
+      "Python",
+      "Machine Learning",
+      "JavaScript",
+      "Full-Stack"
+    ],
     "detail": {
       "isModal": true,
       "year": "2024",
@@ -86,10 +164,18 @@
   },
   {
     "title": "YuccaGPT",
-    "categories": ["AI & Machine Learning", "Full-Stack Web"],
+    "categories": [
+      "AI & Machine Learning",
+      "Full-Stack Web"
+    ],
     "imageSrc": "projects/project_yuccagpt.png",
     "description": "Architected an interactive voice-enabled information portal integrating Python, Google Cloud Text-to-Speech (TTS), and a modern React frontend for real-time conversational responses.",
-    "skills": ["React", "Python", "Google Cloud", "JavaScript"],
+    "skills": [
+      "React",
+      "Python",
+      "Google Cloud",
+      "JavaScript"
+    ],
     "detail": {
       "isModal": true,
       "year": "2024",
@@ -103,10 +189,17 @@
   },
   {
     "title": "Mandiri Langgeng Perkasa (MLP)",
-    "categories": ["Full-Stack Web"],
+    "categories": [
+      "Full-Stack Web"
+    ],
     "imageSrc": "projects/project_alpwebdev.png",
     "description": "Architected a full-stack B2B digital catalog and customer inquiry platform for a leading ceramic supplier in East Kalimantan, transitioning physical inventory to an interactive web portal.",
-    "skills": ["PHP", "MySQL", "JavaScript", "HTML/CSS"],
+    "skills": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "HTML/CSS"
+    ],
     "detail": {
       "isModal": true,
       "year": "2024",
@@ -123,10 +216,17 @@
   },
   {
     "title": "EduLiving",
-    "categories": ["Full-Stack Web"],
+    "categories": [
+      "Full-Stack Web"
+    ],
     "imageSrc": "projects/project_eduliving.png",
     "description": "Built an interactive gamified educational platform for zoological park visitors, featuring dynamic trivia challenges, digital collectible rewards, and real-time score tracking.",
-    "skills": ["PHP", "MySQL", "JavaScript", "CSS"],
+    "skills": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "CSS"
+    ],
     "detail": {
       "isModal": true,
       "year": "2024",
@@ -143,10 +243,17 @@
   },
   {
     "title": "DigPro",
-    "categories": ["Full-Stack Web"],
+    "categories": [
+      "Full-Stack Web"
+    ],
     "imageSrc": "projects/project_digpro.png",
     "description": "Developed an MVP digital marketplace connecting local SMEs with verified content creators, featuring automated onboarding workflows, subscription pipelines, and lead tracking.",
-    "skills": ["PHP", "MySQL", "JavaScript", "CSS"],
+    "skills": [
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "CSS"
+    ],
     "detail": {
       "isModal": true,
       "year": "2024",
@@ -163,10 +270,17 @@
   },
   {
     "title": "De Sauge",
-    "categories": ["Full-Stack Web"],
+    "categories": [
+      "Full-Stack Web"
+    ],
     "imageSrc": "projects/project_desauge.png",
     "description": "Engineered a bespoke e-commerce storefront for an artisanal food brand, implementing responsive product showcases, interactive cart management, and seamless customer order workflows.",
-    "skills": ["JavaScript", "HTML5", "CSS3", "E-Commerce"],
+    "skills": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "E-Commerce"
+    ],
     "detail": {
       "isModal": true,
       "year": "2024",

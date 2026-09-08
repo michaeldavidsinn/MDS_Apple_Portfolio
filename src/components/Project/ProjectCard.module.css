@@ -89,7 +89,7 @@
   font-size: 0.76rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0;
 }
 
 .title {
@@ -133,6 +133,7 @@
 /* Grup Tombol Link - Apple Pill */
 .links {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
   width: 100%;
 }
@@ -446,5 +447,90 @@
     right: 1rem;
     width: 38px;
     height: 38px;
+  }
+}
+/* Grid Gambar Portrait Khusus */
+.imageGridPortrait {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .imageGridPortrait {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.appStoreBtn {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  border-radius: 980px;
+  padding: 0.65rem 0.9rem;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  letter-spacing: -0.01em;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.appStoreBtn:hover {
+  background-color: #1a1a1a;
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Wrapper untuk Badges agar bisa sejajar */
+.badgesWrapper {
+  display: flex;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+  flex-wrap: wrap;
+}
+
+/* Active Status Badge */
+.activeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(48, 209, 88, 0.1);
+  color: #30d158; /* Apple Green */
+  border: 1px solid rgba(48, 209, 88, 0.25);
+  padding: 0.35rem 0.75rem;
+  border-radius: 980px;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.pulsingDot {
+  width: 8px;
+  height: 8px;
+  background-color: #30d158;
+  border-radius: 50%;
+  box-shadow: 0 0 0 0 rgba(48, 209, 88, 0.7);
+  animation: pulseGreen 2s infinite;
+}
+
+@keyframes pulseGreen {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(48, 209, 88, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 6px rgba(48, 209, 88, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(48, 209, 88, 0);
   }
 }

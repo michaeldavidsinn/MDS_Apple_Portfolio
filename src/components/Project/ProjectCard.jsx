@@ -5,7 +5,7 @@ import styles from "./ProjectCard.module.css";
 
 export const ProjectCard = ({
   // 1. PERBAIKAN: Menambahkan 'detail' ke dalam destructuring
-  project: { title, badge, imageSrc, description, skills, demo, source, detail },
+  project: { title, badge, imageSrc, description, skills, demo, source, detail, appStoreUrl, status },
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -68,8 +68,14 @@ export const ProjectCard = ({
         </div>
 
         <div className={styles.content}>
-          {/* Render Badge HANYA jika properti badge ada di JSON */}
-          {badge && <div className={styles.specialBadge}>{badge}</div>}
+          <div className={styles.badgesWrapper}>
+            {status === 'active' && (
+              <div className={styles.activeBadge}>
+                <span className={styles.pulsingDot}></span> Active Project
+              </div>
+            )}
+            {badge && <div className={styles.specialBadge}>{badge}</div>}
+          </div>
           <h3 className={styles.title}>{title}</h3>
           <p className={styles.description}>{description}</p>
 
@@ -102,14 +108,38 @@ export const ProjectCard = ({
                 Live Demo
               </a>
             )}
-            <a
-              href={source}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={styles.sourceBtn}
-            >
-              Source Code
-            </a>
+            {appStoreUrl && (
+              <a
+                href={appStoreUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.appStoreBtn}
+              >
+                🍎 App Store
+              </a>
+            )}
+            {Array.isArray(source) ? (
+              source.map((srcItem, idx) => (
+                <a
+                  key={idx}
+                  href={srcItem.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.sourceBtn}
+                >
+                  {srcItem.label}
+                </a>
+              ))
+            ) : (
+              <a
+                href={source}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.sourceBtn}
+              >
+                Source Code
+              </a>
+            )}
           </div>
         </div>
       </motion.div>
@@ -149,12 +179,23 @@ export const ProjectCard = ({
                       <span className={styles.metaValue}>{detail.role}</span>
                     </div>
                   </div>
+                  {appStoreUrl && (
+                    <a
+                      href={appStoreUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.appStoreBtn}
+                      style={{ marginTop: '2rem' }}
+                    >
+                      🍎 Get on App Store
+                    </a>
+                  )}
                 </div>
 
                 <div className={styles.modalMain}>
                   <p className={styles.modalDesc}>{detail.longDescription}</p>
 
-                  <div className={styles.imageGrid}>
+                  <div className={detail.portraitLayout ? styles.imageGridPortrait : styles.imageGrid}>
                     {detail.images.map((img, idx) => (
                       <img
                         key={idx}
