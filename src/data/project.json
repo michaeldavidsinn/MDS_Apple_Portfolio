@@ -136,6 +136,38 @@
     "source": "https://github.com/LouisSetyandaru/GreenThumb.git"
   },
   {
+    "title": "ScribeSoul",
+    "badge": "🧠 Mental Health & Wellness",
+    "categories": [
+      "iOS & Mobile"
+    ],
+    "imageSrc": "projects/scribesoul/scribesoul_1.jpg",
+    "description": "A native Android mental health and emotional stabilization application engineered with Kotlin and Firebase, featuring interactive art therapy drawing, mood stabilization tracking, and therapist consultation discovery.",
+    "skills": [
+      "Kotlin",
+      "Firebase",
+      "Android SDK",
+      "Cloud Firestore",
+      "Canvas API"
+    ],
+    "detail": {
+      "isModal": true,
+      "portraitLayout": true,
+      "year": "2026",
+      "role": "Mobile & Backend Developer (Contract)",
+      "longDescription": "Engineered ScribeSoul, a native Android mental well-being platform designed to help users stabilize emotional distress through creative expression, structured wellness habits, and professional guidance. Developed in a cross-functional squad comprising 2 developers and 1 UI/UX designer.\n\nKey Engineering Contributions:\n• Interactive Art Therapy Canvas: Implemented a responsive drawing canvas utilizing Android Canvas APIs with low-latency touch handling and custom brush smoothing for therapeutic emotional release.\n• Core Experience & Dashboard: Built the home feed and mood tracking workflows using Kotlin and MVVM architecture to deliver personalized daily stabilization prompts.\n• Therapist Discovery & Consultation: Designed and integrated a discovery module for certified mental health professionals with appointment inquiry pipelines.\n• Backend & Cloud Architecture: Engineered the end-to-end Firebase backend, leveraging Cloud Firestore for real-time data synchronization, Firebase Authentication for secure user identity, and Firebase Storage for user artworks.",
+      "images": [
+        "projects/scribesoul/scribesoul_1.jpg",
+        "projects/scribesoul/scribesoul_2.jpg",
+        "projects/scribesoul/scribesoul_3.jpg",
+        "projects/scribesoul/scribesoul_4.jpg",
+        "projects/scribesoul/scribesoul_5.jpg",
+        "projects/scribesoul/scribesoul_6.jpg"
+      ]
+    },
+    "source": "https://github.com/michaeldavidsinn/scribesoul.git"
+  },
+  {
     "title": "BikeFlow",
     "categories": [
       "AI & Machine Learning",
