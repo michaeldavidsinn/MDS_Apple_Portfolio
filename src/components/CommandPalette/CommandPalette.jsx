@@ -83,6 +83,16 @@ export const CommandPalette = ({ isOpen, setIsOpen }) => {
       },
     },
     {
+      id: "portfolio-source",
+      category: "Actions",
+      title: "View Portfolio Source Code",
+      subtitle: "github.com/michaeldavidsinn/MDS_Apple_Portfolio",
+      icon: "💻",
+      perform: () => {
+        window.open("https://github.com/michaeldavidsinn/MDS_Apple_Portfolio", "_blank", "noopener,noreferrer");
+      },
+    },
+    {
       id: "github",
       category: "Social",
       title: "Open GitHub Profile",

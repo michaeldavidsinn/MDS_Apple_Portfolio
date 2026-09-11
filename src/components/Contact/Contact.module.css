@@ -148,6 +148,23 @@
   letter-spacing: -0.01em;
 }
 
+.techCredit {
+  margin-top: 0.4rem;
+  font-size: 0.78rem !important;
+  color: #6e6e73 !important;
+}
+
+.sourceLink {
+  color: #86868b;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sourceLink:hover {
+  color: #2997ff;
+  text-decoration: underline;
+}
+
 /* Responsivitas untuk Tablet & Mobile */
 @media screen and (max-width: 830px) {
   .container {

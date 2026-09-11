@@ -68,9 +68,20 @@ export const Contact = () => {
                 </ul>
             </motion.div>
 
-            {/* Tambahan Baris Copyright untuk kesan Profesional */}
+            {/* Tambahan Baris Copyright & Colophon untuk kesan Profesional */}
             <div className={styles.bottomBar}>
                 <p>&copy; {new Date().getFullYear()} Michael David Sin. All rights reserved.</p>
+                <p className={styles.techCredit}>
+                    Crafted with React, Vite & Framer Motion &bull;{" "}
+                    <a 
+                        href="https://github.com/michaeldavidsinn/MDS_Apple_Portfolio" 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className={styles.sourceLink}
+                    >
+                        View Source Code ↗
+                    </a>
+                </p>
             </div>
         </footer>
     );
