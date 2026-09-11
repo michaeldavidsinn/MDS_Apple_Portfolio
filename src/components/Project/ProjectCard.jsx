@@ -101,22 +101,22 @@ export const ProjectCard = ({
           </ul>
 
           <div className={styles.links}>
-            {hasModalDetail ? (
+            {hasModalDetail && (
               <button
                 onClick={() => setIsModalOpen(true)}
                 className={styles.demoBtn}
               >
                 View Details
               </button>
-            ) : (
-              // 2. PERBAIKAN: Mengubah href={detail} menjadi href={demo}
+            )}
+            {demo && (
               <a
                 href={demo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={styles.demoBtn}
+                className={hasModalDetail ? styles.sourceBtn : styles.demoBtn}
               >
-                Live Demo
+                Live Demo ↗
               </a>
             )}
             {appStoreUrl && (
@@ -197,13 +197,24 @@ export const ProjectCard = ({
                       <span className={styles.metaValue}>{detail.role}</span>
                     </div>
                   </div>
+                  {demo && (
+                    <a
+                      href={demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.demoBtn}
+                      style={{ marginTop: '1.5rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', width: '100%' }}
+                    >
+                      🌐 Visit Live Website ↗
+                    </a>
+                  )}
                   {appStoreUrl && (
                     <a
                       href={appStoreUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={styles.appStoreBtn}
-                      style={{ marginTop: '2rem' }}
+                      style={{ marginTop: demo ? '0.8rem' : '1.5rem', width: '100%', justifyContent: 'center' }}
                     >
                       🍎 Get on App Store
                     </a>

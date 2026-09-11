@@ -47,7 +47,7 @@ export const About = () => {
                         <h3>Who I Am</h3>
                     </div>
                     <p>
-                        I am a Software Engineer specializing in full-stack web architectures, native Apple ecosystem development (Swift/SwiftUI), and applied Artificial Intelligence. With hands-on experience delivering enterprise production software and training computer vision models, I bridge robust engineering with measurable business impact.
+                        I am an Applied AI & Software Engineer specializing in computer vision pipelines, machine learning model optimization, and their production deployment across native Apple ecosystems (Swift/Core ML) and full-stack web architectures. With hands-on experience training YOLO11 architectures and delivering enterprise production software, I bridge applied AI with real-world engineering.
                     </p>
                 </motion.div>
 
@@ -62,10 +62,10 @@ export const About = () => {
                         <h3>Profile</h3>
                     </div>
                     <ul className={styles.list}>
-                        <li><strong>Role:</strong> Software Engineer</li>
-                        <li><strong>Focus:</strong> Full-Stack, iOS, & Applied AI</li>
+                        <li><strong>Role:</strong> Applied AI & Software Engineer</li>
+                        <li><strong>Focus:</strong> Computer Vision, Core ML, iOS & Full-Stack</li>
                         <li><strong>Base:</strong> Surabaya, Indonesia</li>
-                        <li><strong>Status:</strong> Open to Opportunities</li>
+                        <li><strong>Status:</strong> Open to Roles & Freelance Web</li>
                     </ul>
                 </motion.div>
 

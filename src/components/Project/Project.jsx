@@ -6,7 +6,6 @@ import { ProjectCard } from "./ProjectCard";
 
 const CATEGORIES = [
   "All",
-  "Enterprise & Flagship",
   "AI & Machine Learning",
   "iOS & Mobile",
   "Full-Stack Web"

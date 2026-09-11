@@ -36,7 +36,7 @@ export const Hero = () => {
             <span className={styles.statusDotPing} />
             <span className={styles.statusDot} />
           </span>
-          <span>Available for Software Engineering, iOS & Applied AI Roles</span>
+          <span>Available for Applied AI & Software Engineering Roles</span>
         </motion.div>
 
         <motion.h1 variants={itemVariants} className={styles.title}>
@@ -45,10 +45,9 @@ export const Hero = () => {
         </motion.h1>
 
         <motion.p variants={itemVariants} className={styles.description}>
-          Software Engineer & Coder at the Apple Developer Academy. I architect
+          Applied AI & Software Engineer (Coder at the Apple Developer Academy). I architect
           intelligent, production-grade digital products—bridging applied AI/computer vision
-          pipelines, high-performance full-stack web platforms, and native Apple mobile
-          experiences using Swift, Python, React, and Flutter.
+          pipelines with high-performance native Apple mobile and full-stack web platforms.
         </motion.p>
 
         <motion.div variants={itemVariants} className={styles.buttonContainer}>
@@ -82,6 +81,11 @@ export const Hero = () => {
         {/* Apple-Style Quick Metrics / Impact Highlights */}
         <motion.div variants={itemVariants} className={styles.statsBar}>
           <div className={styles.statItem}>
+            <span className={styles.statValue}>Applied AI & Vision</span>
+            <span className={styles.statLabel}>YOLO11 • PyTorch • Core ML</span>
+          </div>
+          <div className={styles.statDivider} />
+          <div className={styles.statItem}>
             <span className={styles.statValue}>Apple Dev Academy</span>
             <span className={styles.statLabel}>Cohort 2026</span>
           </div>
@@ -89,11 +93,6 @@ export const Hero = () => {
           <div className={styles.statItem}>
             <span className={styles.statValue}>200+ Industrial POs</span>
             <span className={styles.statLabel}>Production ERP</span>
-          </div>
-          <div className={styles.statDivider} />
-          <div className={styles.statItem}>
-            <span className={styles.statValue}>Applied AI & Vision</span>
-            <span className={styles.statLabel}>YOLO11 • PyTorch • Swift</span>
           </div>
         </motion.div>
       </motion.div>

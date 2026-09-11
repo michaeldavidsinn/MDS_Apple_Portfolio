@@ -26,7 +26,7 @@ export const Contact = () => {
                 <div className={styles.text}>
                     <h2>Let's Connect</h2>
                     <p>
-                        Whether you have a project in mind, a potential opportunity, 
+                        Whether you have an engineering role, a custom website or freelance project, 
                         or just want to discuss technology, my inbox is always open.
                     </p>
                 </div>
