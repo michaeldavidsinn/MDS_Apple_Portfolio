@@ -6,7 +6,7 @@
       "iOS & Mobile",
       "Full-Stack Web"
     ],
-    "imageSrc": "projects/project_basketyuk.png",
+    "appIcon": "appicon/icon_basketyuk.png",
     "description": "A live digital ecosystem for the Indonesian basketball community. Currently available on the App Store with 100+ downloads, featuring tournament tracking, club management, and ticketing.",
     "appStoreUrl": "https://apps.apple.com/id/app/basketyuk-id/id6763760296",
     "status": "active",
@@ -81,7 +81,7 @@
       "AI & Machine Learning",
       "iOS & Mobile"
     ],
-    "imageSrc": "projects/project_dogemotion.png",
+    "appIcon": "appicon/icon_dogemotion.png",
     "description": "Engineered an intelligent canine behavioral recognition and care recommendation system, combining fine-tuned YOLO11 computer vision with a high-performance cross-platform Flutter mobile client.",
     "skills": [
       "YOLO11",
@@ -109,7 +109,7 @@
     "categories": [
       "iOS & Mobile"
     ],
-    "imageSrc": "projects/project_greenthumb.png",
+    "appIcon": "appicon/icon_greenthumb.jpg",
     "description": "Engineered a native multi-platform botanical cataloging and identification application for iOS and macOS using Swift and SwiftUI, featuring modular view architectures and responsive local persistence.",
     "skills": [
       "Swift",
@@ -141,7 +141,7 @@
     "categories": [
       "iOS & Mobile"
     ],
-    "imageSrc": "projects/scribesoul/scribesoul_1.jpg",
+    "appIcon": "appicon/icon_scribesoul.png",
     "description": "A native Android mental health and emotional stabilization application engineered with Kotlin and Firebase, featuring interactive art therapy drawing, mood stabilization tracking, and therapist consultation discovery.",
     "skills": [
       "Kotlin",
@@ -166,6 +166,39 @@
       ]
     },
     "source": "https://github.com/michaeldavidsinn/scribesoul.git"
+  },
+  {
+    "title": "STRYD",
+    "badge": "🏃 SportsTech & Social Fitness",
+    "categories": [
+      "iOS & Mobile",
+      "Full-Stack Web",
+      "AI & Machine Learning"
+    ],
+    "appIcon": "appicon/icon_stryd.png",
+    "description": "A comprehensive social running and sports analytics application built with Kotlin and Laravel, featuring real-time GPS route tracking with Google Maps, group running sessions, gear mileage monitoring, social feeds, and mathematical performance prediction models.",
+    "skills": [
+      "Kotlin",
+      "Laravel",
+      "MySQL",
+      "Google Maps API",
+      "Predictive Analytics"
+    ],
+    "detail": {
+      "isModal": true,
+      "portraitLayout": true,
+      "year": "2024",
+      "role": "Lead Mobile & Full-Stack Engineer (Contract)",
+      "longDescription": "Architected and engineered STRYD, an end-to-end social fitness and running analytics platform designed to connect endurance runners and optimize athletic progression.\n\nKey Engineering Highlights & Contributions:\n• Real-Time GPS Tracking & Spatial Analytics: Integrated Google Maps SDK and Elevation APIs to deliver precise real-time route plotting, pace splits, and dynamic elevation profiles.\n• Community & Group Running Sessions: Engineered a collaborative run-matching module allowing athletes to create, discover, and join group running sessions with social feed interaction.\n• Gear Lifespan & Mileage Tracker: Implemented a specialized running shoe mileage tracking engine to monitor footwear degradation, alerting runners when gear surpasses recommended distance thresholds.\n• Algorithmic Performance Prediction: Built mathematical and predictive modeling routines to forecast race completion times, stamina metrics, and pacing benchmarks based on historical physiological data.\n• Full-Stack Architecture & API: Designed a scalable RESTful backend with Laravel and MySQL, managing user authentication, activity telemetry, social feeds, and multi-user synchronization.",
+      "images": [
+        "projects/stryd/stryd_1.png",
+        "projects/stryd/stryd_2.png",
+        "projects/stryd/stryd_3.png",
+        "projects/stryd/stryd_4.png",
+        "projects/stryd/stryd_5.png"
+      ]
+    },
+    "source": "https://github.com/michaeldavidsinn/STRYD"
   },
   {
     "title": "BikeFlow",

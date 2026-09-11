@@ -4,8 +4,8 @@ import { getImageurl } from "../../utils";
 import styles from "./ProjectCard.module.css";
 
 export const ProjectCard = ({
-  // 1. PERBAIKAN: Menambahkan 'detail' ke dalam destructuring
-  project: { title, badge, imageSrc, description, skills, demo, source, detail, appStoreUrl, status },
+  // 1. PERBAIKAN: Menambahkan 'detail' dan 'appIcon' ke dalam destructuring
+  project: { title, badge, imageSrc, appIcon, description, skills, demo, source, detail, appStoreUrl, status },
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -59,13 +59,24 @@ export const ProjectCard = ({
         variants={cardVariants}
         onMouseMove={handleMouseMove}
       >
-        <div className={styles.imageWrapper}>
-          <img
-            src={getImageurl(imageSrc)}
-            alt={`Thumbnail of ${title}`}
-            className={styles.image}
-          />
-        </div>
+        {appIcon ? (
+          <div className={styles.appHeaderWrapper}>
+            <div className={styles.appIconAmbientGlow} />
+            <img
+              src={getImageurl(appIcon)}
+              alt={`${title} App Icon`}
+              className={styles.appIcon}
+            />
+          </div>
+        ) : imageSrc ? (
+          <div className={styles.imageWrapper}>
+            <img
+              src={getImageurl(imageSrc)}
+              alt={`Thumbnail of ${title}`}
+              className={styles.image}
+            />
+          </div>
+        ) : null}
 
         <div className={styles.content}>
           <div className={styles.badgesWrapper}>
@@ -168,6 +179,13 @@ export const ProjectCard = ({
 
               <div className={styles.modalLayout}>
                 <div className={styles.modalSidebar}>
+                  {appIcon && (
+                    <img
+                      src={getImageurl(appIcon)}
+                      alt={`${title} App Icon`}
+                      className={styles.modalAppIcon}
+                    />
+                  )}
                   <h2 className={styles.modalTitle}>{title}</h2>
                   <div className={styles.modalMeta}>
                     <div className={styles.metaItem}>
