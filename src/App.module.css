@@ -1,4 +1,4 @@
-@import "./vars.css";
+@import "./styles/vars.css";
 
 .App {
   background-color: var(--color-bg);

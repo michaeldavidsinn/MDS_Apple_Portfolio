@@ -2,15 +2,17 @@
 import React, { useState } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
 import styles from "./App.module.css";
-import { About } from "./components/About/About";
-import { Contact } from "./components/Contact/Contact";
-import { Experience } from "./components/Experience/Experience";
-import { Hero } from "./components/Hero/Hero";
-import { Navbar } from "./components/Navbar/Navbar";
-import { Project } from "./components/Project/Project";
-import { Certificates } from "./components/Certificates/Certificates";
-import { BackToTop } from "./components/BackToTop/BackToTop";
-import { CommandPalette } from "./components/CommandPalette/CommandPalette";
+import {
+  Navbar,
+  Hero,
+  About,
+  Experience,
+  Project,
+  Certificates,
+  Contact,
+  BackToTop,
+  CommandPalette,
+} from "./components";
 
 function App() {
   const [isCmdOpen, setIsCmdOpen] = useState(false);
