@@ -6,6 +6,7 @@ import { ProjectCard } from "./ProjectCard";
 
 const CATEGORIES = [
   "All",
+  "Apple Academy",
   "AI & Machine Learning",
   "iOS & Mobile",
   "Game & Interactive",
@@ -24,7 +25,7 @@ export const Project = () => {
       <div className={styles.header}>
         <h2 className={styles.title}>Projects</h2>
         <p className={styles.subtitle}>
-          Curated engineering solutions across applied machine learning, native Apple platforms, interactive game development, and scalable web platforms.
+          Curated engineering solutions across Apple Developer Academy innovations, applied machine learning, native mobile platforms, and scalable web systems.
         </p>
 
         {/* Filter Tabs */}

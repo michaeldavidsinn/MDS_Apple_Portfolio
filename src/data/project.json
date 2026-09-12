@@ -76,6 +76,7 @@
     "title": "Dogtective Riddle",
     "badge": "🎮 2D SpriteKit Game • App Store",
     "categories": [
+      "Apple Academy",
       "iOS & Mobile",
       "Game & Interactive"
     ],
@@ -107,6 +108,42 @@
       ]
     },
     "source": "https://github.com/beebeewijaya-tech/dogtective.git"
+  },
+  {
+    "title": "Should I Really?",
+    "badge": "🎮 Interactive Sim • Apple Academy",
+    "categories": [
+      "Apple Academy",
+      "iOS & Mobile",
+      "Game & Interactive"
+    ],
+    "appIcon": "appicon/icon_shouldireally.png",
+    "description": "An interactive social media simulation game developed at Apple Developer Academy using Swift. Built to address high school digital literacy pain points discovered through educator interviews, simulating high school life from 10th grade to graduation with Framing & Caption metrics and branching outcomes.",
+    "skills": [
+      "Swift",
+      "iOS",
+      "State Persistence",
+      "Accessibility",
+      "Unit Testing"
+    ],
+    "detail": {
+      "isModal": true,
+      "portraitLayout": true,
+      "year": "2024",
+      "role": "iOS & Core Logic Developer (Apple Developer Academy)",
+      "longDescription": "Engineered 'Should I Really?', an interactive narrative casual simulation game built with Swift during the Apple Developer Academy. Conceived from empirical field interviews with high school teachers across Surabaya addressing digital literacy dilemmas, the game puts players in the shoes of a high school student navigating social media from 10th grade until graduation. Over 6 decision-making rounds, players choose photo framings and captions, managing their digital footprint and unlocking consequence-driven narrative endings reflecting their real-world impact.\n\nKey Engineering Highlights & Contributions:\n• Core UI & Social Media Simulation: Built the interactive home feed, post creator, and caption selection interface replicating modern social platform dynamics.\n• Dual Metric Evaluation Engine: Engineered the underlying scoring logic evaluating visual Framing and textual Caption choices to dynamically calculate social impact and determine post-graduation narrative endings.\n• State Persistence & Archive Pipeline: Architected local data persistence to reliably record posting history, decision trees, and unlocked endings across both home and archive views.\n• Native Apple Accessibility: Implemented inclusive iOS Accessibility standards (Dynamic Type scaling, VoiceOver compatibility, and assistive contrast) ensuring broad usability for all students.\n• Comprehensive Unit Testing: Developed robust XCTest suites covering scoring algorithms, metric calculations, and persistence flows for rock-solid stability.",
+      "images": [
+        "projects/shouldireally/shouldireally_1.PNG",
+        "projects/shouldireally/shouldireally_2.PNG",
+        "projects/shouldireally/shouldireally_3.PNG",
+        "projects/shouldireally/shouldireally_4.PNG",
+        "projects/shouldireally/shouldireally_5.PNG",
+        "projects/shouldireally/shouldireally_6.PNG",
+        "projects/shouldireally/shouldireally_7.PNG",
+        "projects/shouldireally/shouldireally_8.PNG"
+      ]
+    },
+    "source": "https://github.com/deusgvrl/should-i-really.git"
   },
   {
     "title": "Ubinkayu ERP",

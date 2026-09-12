@@ -110,6 +110,11 @@
     "category": "web"
   },
   {
+    "title": "PostgreSQL",
+    "imageSrc": "skills/postgresql.svg.webp",
+    "category": "web"
+  },
+  {
     "title": "Firebase",
     "imageSrc": "skills/firebase.png",
     "category": "web"
