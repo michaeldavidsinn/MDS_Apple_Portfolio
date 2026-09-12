@@ -63,11 +63,26 @@ export const Experience = () => {
                             ))}
                     </div>
 
-                    {/* Kelompok 3: Full-Stack Web & Cloud Architecture */}
-                    <h3 className={styles.subTitle}>Full-Stack & Cloud Architecture</h3>
-                    <div className={styles.skills}>
+                    {/* Kelompok 3: Full-Stack Web Development */}
+                    <h3 className={styles.subTitle}>Full-Stack Web Development</h3>
+                    <div className={styles.skills} style={{ marginBottom: "2.2rem" }}>
                         {skills
                             .filter(skill => skill.category === "web")
+                            .map((skill, id) => (
+                                <motion.div key={id} className={styles.skillCard} variants={itemVariants}>
+                                    <div className={styles.skillImageContainer}> 
+                                        <img src={getImageurl(skill.imageSrc)} alt={skill.title} />
+                                    </div>
+                                    <p>{skill.title}</p>
+                                </motion.div>
+                            ))}
+                    </div>
+
+                    {/* Kelompok 4: Cloud, Database & Tools */}
+                    <h3 className={styles.subTitle}>Cloud, Database & Tools</h3>
+                    <div className={styles.skills}>
+                        {skills
+                            .filter(skill => skill.category === "tools")
                             .map((skill, id) => (
                                 <motion.div key={id} className={styles.skillCard} variants={itemVariants}>
                                     <div className={styles.skillImageContainer}> 

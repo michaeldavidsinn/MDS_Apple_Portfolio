@@ -196,29 +196,64 @@ export const ProjectCard = ({
                       <span className={styles.metaLabel}>Role</span>
                       <span className={styles.metaValue}>{detail.role}</span>
                     </div>
+                    {skills && skills.length > 0 && (
+                      <div className={styles.metaItem}>
+                        <span className={styles.metaLabel}>Tech Stack</span>
+                        <ul className={styles.modalSkills}>
+                          {skills.map((skill, id) => (
+                            <li key={id} className={styles.modalSkill}>
+                              {skill}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
                   </div>
-                  {demo && (
-                    <a
-                      href={demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.demoBtn}
-                      style={{ marginTop: '1.5rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', width: '100%' }}
-                    >
-                      🌐 Visit Live Website ↗
-                    </a>
-                  )}
-                  {appStoreUrl && (
-                    <a
-                      href={appStoreUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className={styles.appStoreBtn}
-                      style={{ marginTop: demo ? '0.8rem' : '1.5rem', width: '100%', justifyContent: 'center' }}
-                    >
-                      🍎 Get on App Store
-                    </a>
-                  )}
+
+                  <div className={styles.modalLinks}>
+                    {demo && (
+                      <a
+                        href={demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${styles.modalActionBtn} ${styles.modalActionPrimary}`}
+                      >
+                        🌐 Visit Live Website ↗
+                      </a>
+                    )}
+                    {appStoreUrl && (
+                      <a
+                        href={appStoreUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={styles.appStoreBtn}
+                      >
+                        🍎 Get on App Store
+                      </a>
+                    )}
+                    {Array.isArray(source) ? (
+                      source.map((srcItem, idx) => (
+                        <a
+                          key={idx}
+                          href={srcItem.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className={`${styles.modalActionBtn} ${styles.modalActionSecondary}`}
+                        >
+                          💻 {srcItem.label} ↗
+                        </a>
+                      ))
+                    ) : source ? (
+                      <a
+                        href={source}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`${styles.modalActionBtn} ${styles.modalActionSecondary}`}
+                      >
+                        💻 View Source Code ↗
+                      </a>
+                    ) : null}
+                  </div>
                 </div>
 
                 <div className={styles.modalMain}>

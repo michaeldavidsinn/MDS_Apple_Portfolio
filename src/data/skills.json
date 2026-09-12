@@ -107,21 +107,26 @@
   {
     "title": "MySQL",
     "imageSrc": "skills/mysql.png",
-    "category": "web"
+    "category": "tools"
   },
   {
     "title": "PostgreSQL",
     "imageSrc": "skills/postgresql.svg.webp",
-    "category": "web"
+    "category": "tools"
   },
   {
     "title": "Firebase",
     "imageSrc": "skills/firebase.png",
-    "category": "web"
+    "category": "tools"
   },
   {
     "title": "Google Cloud",
     "imageSrc": "skills/googlecloud.png",
-    "category": "web"
+    "category": "tools"
+  },
+  {
+    "title": "GitHub",
+    "imageSrc": "skills/github.png",
+    "category": "tools"
   }
 ]
