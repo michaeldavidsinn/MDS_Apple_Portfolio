@@ -86,7 +86,7 @@ export const About = () => {
                         </div>
                         <div className={styles.timelineItem}>
                             <h4>Universitas Ciputra Surabaya</h4>
-                            <p>B.S. in Informatics (2022 - Present)</p>
+                            <p>B.S. in Informatics (2022 - 2026)</p>
                         </div>
                     </div>
                 </motion.div>

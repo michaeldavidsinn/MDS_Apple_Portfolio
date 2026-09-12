@@ -8,6 +8,7 @@ const CATEGORIES = [
   "All",
   "AI & Machine Learning",
   "iOS & Mobile",
+  "Game & Interactive",
   "Full-Stack Web"
 ];
 
@@ -23,7 +24,7 @@ export const Project = () => {
       <div className={styles.header}>
         <h2 className={styles.title}>Projects</h2>
         <p className={styles.subtitle}>
-          Curated engineering solutions across enterprise production systems, applied machine learning, native Apple platforms, and scalable web platforms.
+          Curated engineering solutions across applied machine learning, native Apple platforms, interactive game development, and scalable web platforms.
         </p>
 
         {/* Filter Tabs */}

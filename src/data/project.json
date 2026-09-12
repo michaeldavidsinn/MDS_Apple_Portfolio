@@ -73,6 +73,42 @@
     "demo": "https://basketyuk.id/"
   },
   {
+    "title": "Dogtective Riddle",
+    "badge": "🎮 2D SpriteKit Game • App Store",
+    "categories": [
+      "iOS & Mobile",
+      "Game & Interactive"
+    ],
+    "appIcon": "appicon/icon_dogtective.png",
+    "description": "An interactive 2D detective narrative puzzle game published on the App Store, engineered at Apple Developer Academy with Swift and SpriteKit. Designed as a 15-minute eudaimonic casual experience where players solve the mystery of stolen bones across the canine city.",
+    "appStoreUrl": "https://apps.apple.com/app/dogtective-riddle/id6768240824",
+    "skills": [
+      "Swift",
+      "SpriteKit",
+      "iOS",
+      "Lottie",
+      "Game Development"
+    ],
+    "detail": {
+      "isModal": true,
+      "portraitLayout": false,
+      "year": "2024",
+      "role": "iOS & Gameplay Developer (Apple Developer Academy)",
+      "longDescription": "Engineered Dogtective Riddle, a narrative-driven 2D detective puzzle game published on the App Store, developed during the Apple Developer Academy. Conceived as a 15-minute eudaimonic casual game to alleviate daily boredom, players step into the paws of an intrepid canine detective investigating a municipal mystery—uncovering who stole all the bones across town by interrogating citizens, following the narrative, gathering forensic evidence, and solving interactive puzzles.\n\nKey Engineering Highlights & Contributions:\n• Police Game Scene & State Engine: Architected the complete frontend scene and underlying state machine for the police headquarters, orchestrating mission briefings, suspect boards, and clue deduction workflows.\n• Level Progression & Map System: Built the dynamic level selection system and interactive map interface, allowing players to explore distinct urban districts and advance through narrative chapters.\n• Evidence Storage & State Persistence: Implemented resilient local game progress and inventory persistence, securing collected clues, witness statements, and puzzle states across gameplay sessions.\n• Interactive Puzzles & NPC Interrogation: Programmed witness dialogue systems and interactive clue-hunting puzzles required to piece together testimony and unmask the culprit.\n• Audio-Visual Integration: Integrated SpriteKit node physics coupled with Lottie vector animations for fluid story cutscenes and curated Envato sound design and music for atmospheric immersion.\n• In-Game Settings & Gameplay Controls: Engineered the in-game settings module for audio balancing, sound effects, and gameplay controls conforming to Apple Human Interface Guidelines (HIG).",
+      "images": [
+        "projects/dogtective/dogtective_1.PNG",
+        "projects/dogtective/dogtective_2.PNG",
+        "projects/dogtective/dogtective_3.PNG",
+        "projects/dogtective/dogtective_4.PNG",
+        "projects/dogtective/dogtective_5.PNG",
+        "projects/dogtective/dogtective_6.PNG",
+        "projects/dogtective/dogtective_7.png",
+        "projects/dogtective/dogtective_8.PNG"
+      ]
+    },
+    "source": "https://github.com/beebeewijaya-tech/dogtective.git"
+  },
+  {
     "title": "Ubinkayu ERP",
     "badge": "🏢 Enterprise System • 200+ POs",
     "categories": [
@@ -310,7 +346,9 @@
   },
   {
     "title": "EduLiving",
+    "badge": "🎮 Gamified Zoo Learning",
     "categories": [
+      "Game & Interactive",
       "Full-Stack Web"
     ],
     "imageSrc": "projects/project_eduliving.png",

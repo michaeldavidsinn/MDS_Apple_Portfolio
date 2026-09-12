@@ -35,6 +35,11 @@
     "category": "mobile"
   },
   {
+    "title": "SpriteKit",
+    "imageSrc": "skills/spritekit.png",
+    "category": "mobile"
+  },
+  {
     "title": "Flutter",
     "imageSrc": "skills/flutter.png",
     "category": "mobile"
