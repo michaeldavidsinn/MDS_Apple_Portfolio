@@ -29,6 +29,39 @@
     "source": "https://github.com/michaeldavidsinn/Dog-Emotion-YOLO11-CloudInference"
   },
   {
+    "title": "Pawsitive",
+    "badge": "🧠 Flagship Edge AI • Apple Academy",
+    "categories": [
+      "Apple Academy",
+      "AI & Machine Learning",
+      "iOS & Mobile"
+    ],
+    "appIcon": "appicon/icon_pawsitive.png",
+    "description": "A 100% offline-first Edge AI iOS app developed at Apple Developer Academy. Evolves my thesis model into Core ML, combining real-time emotion & bounding-box detection, Apple Vision breed classification with whitelist taxonomy, local Llama 3.2 1B SLM advice inference, and SwiftData persistence.",
+    "skills": [
+      "Swift",
+      "Core ML",
+      "Apple Vision",
+      "Local LLM / SLM",
+      "SwiftData",
+      "Edge AI"
+    ],
+    "detail": {
+      "isModal": true,
+      "portraitLayout": true,
+      "year": "2024",
+      "role": "Edge AI & iOS Engineer (Apple Developer Academy)",
+      "longDescription": "Engineered Pawsitive, a flagship 100% offline-first Edge AI iOS application that performs real-time canine emotion detection, breed classification, and generates personalized on-device pet care advice without requiring an internet connection. Developed at the Apple Developer Academy as a high-performance evolution of my undergraduate thesis (Dog Emotion Recognition), Pawsitive converts custom computer vision models to Apple Core ML and pairs them with quantized on-device Small Language Models (SLM) for sub-second, zero-latency local intelligence.\n\nKey Engineering Highlights & Contributions (10-Cycle Journey):\n• Real-Time Emotion & Bounding Box Inference (Core ML): Converted thesis vision models into optimized Core ML models with an AVFoundation camera capture pipeline, achieving real-time bounding box tracking and facial expression classification directly on-device.\n• Precision Breed Taxonomy & Fallback (Apple Vision): Engineered a specialized VisionBreedDetector leveraging VNClassifyImageRequest with an in-memory Whitelist (Set<String>) to filter out ambient background noise (e.g., walls, documents) with graceful fallback to generic pet taxonomy when encountering out-of-distribution subjects.\n• 100% On-Device SLM Intelligence (Meta Llama 3.2 1B): Replaced cloud APIs (Gemini) by integrating Meta Llama 3.2 1B Instruct (quantized GGUF Q4_K_M via llama.cpp and a native Swift actor), generating tailored pet care recommendations from fused breed and emotion vectors in under two seconds in complete flight mode.\n• Robust Local Persistence (SwiftData): Designed an optimized schema with @Model (PetProfile & MoodEntry) using @Attribute(.externalStorage) for photo memory management, alongside an automated reactive @Query persistence pipeline.\n• History Detail & Apple HIG Compliance: Crafted an Apple Human Interface Guidelines-compliant history journal with full-text expanders, interactive high-resolution photo inspect, swipe-to-delete gestures, and native deletion confirmation dialogues.",
+      "images": [
+        "projects/pawsitive/pawsitive_1.PNG",
+        "projects/pawsitive/pawsitive_2.PNG",
+        "projects/pawsitive/pawsitive_3.PNG",
+        "projects/pawsitive/pawsitive_4.PNG"
+      ]
+    },
+    "source": "https://github.com/michaeldavidsinn/Pawsitive"
+  },
+  {
     "title": "BasketYuk",
     "badge": "📱 App Store | 100+ Downloads",
     "categories": [
