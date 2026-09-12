@@ -14,10 +14,10 @@
     box-sizing: border-box;
 }
 
-/* Class ini diaktifkan oleh React saat di-scroll */
+/* Glassmorphism saat scroll */
 .scrolled {
     padding: 0.9rem 10%;
-    background: rgba(5, 5, 7, 0.78);
+    background: rgba(5, 5, 7, 0.82);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
@@ -42,6 +42,21 @@
     align-items: center;
 }
 
+/* ----------------- DESKTOP NAVIGASI ----------------- */
+.drawer {
+    display: flex;
+    align-items: center;
+    gap: 2.2rem;
+}
+
+.drawerHeader {
+    display: none;
+}
+
+.drawerFooter {
+    display: none;
+}
+
 .menuItems {
     display: flex;
     align-items: center;
@@ -49,6 +64,10 @@
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+.menuItems li {
+    list-style: none;
 }
 
 .menuItems a {
@@ -61,29 +80,35 @@
     transition: color 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* Animasi garis bawah halus saat link di-hover */
-.menuItems a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: -6px;
-    left: 0;
-    background-color: #2997ff;
-    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    border-radius: 2px;
+.chevron {
+    display: none;
 }
 
-.menuItems a:hover {
-    color: #f5f5f7;
+/* Animasi garis bawah halus saat link di-hover (KHUSUS Desktop mouse hover) */
+@media (hover: hover) {
+    .menuItems a:hover {
+        color: #f5f5f7;
+    }
+
+    .menuItems a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -6px;
+        left: 0;
+        background-color: #2997ff;
+        transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+        border-radius: 2px;
+    }
+
+    .menuItems a:hover::after {
+        width: 100%;
+    }
 }
 
-.menuItems a:hover::after {
-    width: 100%;
-}
-
-/* Apple Command Palette Trigger Button */
-.cmdBtn {
+/* Apple Command Palette Trigger Button (Desktop) */
+.desktopCmdBtn {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -98,9 +123,10 @@
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
+    margin-left: 1.8rem;
 }
 
-.cmdBtn:hover {
+.desktopCmdBtn:hover {
     background: rgba(41, 151, 255, 0.12);
     border-color: rgba(41, 151, 255, 0.35);
     color: #f5f5f7;
@@ -118,58 +144,257 @@
     line-height: 1.2;
 }
 
+.menuToggleBtn {
+    display: none;
+}
+
 .menuBtn {
     display: none;
 }
 
-/* ----------------- MOBILE RESPONSIVE ----------------- */
+.overlay {
+    display: none;
+}
+
+/* ----------------- MOBILE RESPONSIVE DRAWER ----------------- */
 @media screen and (max-width: 830px) {
+    .desktopCmdBtn {
+        display: none;
+    }
+
+    .menuToggleBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
     .menuBtn {
         display: block;
-        width: 30px;
-        height: 30px;
+        width: 28px;
+        height: 28px;
         cursor: pointer;
         z-index: 101;
     }
 
-    .menuItems {
+    /* Backdrop Dimmed Overlay */
+    .overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.65);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        z-index: 10;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .overlayOpen {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    /* Slide-in Sheet Drawer */
+    .drawer {
         position: fixed;
         top: 0;
         right: -100%;
-        height: 100vh;
-        width: 75%;
-        max-width: 320px;
+        height: 100dvh;
+        width: 82%;
+        max-width: 340px;
+        background: #0d0d12;
+        border-left: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: -20px 0 60px rgba(0, 0, 0, 0.85);
+        display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2.5rem;
-        background: rgba(10, 10, 14, 0.96);
-        backdrop-filter: blur(24px);
-        -webkit-backdrop-filter: blur(24px);
-        border-left: 1px solid rgba(255, 255, 255, 0.08);
-        transition: right 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.6);
+        justify-content: space-between;
+        padding: 1.8rem 1.6rem;
+        z-index: 50;
+        box-sizing: border-box;
+        transition: right 0.38s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
-    .menuOpen {
+    .drawerOpen {
         right: 0;
     }
 
-    .menuItems a {
+    /* Drawer Header */
+    .drawerHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 1.2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        width: 100%;
+    }
+
+    .drawerBrand {
         font-size: 1.25rem;
+        font-weight: 700;
         color: #f5f5f7;
+        letter-spacing: -0.5px;
     }
 
-    .cmdBtn {
-        padding: 0.6rem 1.4rem;
-        font-size: 1.05rem;
+    .drawerCloseBtn {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: #f5f5f7;
+        font-size: 1.4rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: 1;
+        transition: all 0.2s ease;
+    }
+
+    .drawerCloseBtn:active {
+        background: rgba(255, 255, 255, 0.18);
+        transform: scale(0.94);
+    }
+
+    /* Navigation Links List */
+    .menuItems {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0.8rem 0;
+        width: 100%;
+        flex-grow: 1;
+        justify-content: center;
+    }
+
+    .menuItems li {
+        width: 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .menuItems li:last-child {
+        border-bottom: none;
+    }
+
+    .menuItems a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.95rem 0;
+        font-size: 1.18rem;
+        font-weight: 500;
+        color: #f5f5f7;
+        text-decoration: none;
+        width: 100%;
+        letter-spacing: -0.01em;
+        transition: color 0.2s ease;
+    }
+
+    .menuItems a:active {
+        color: #2997ff;
+    }
+
+    .chevron {
+        display: block;
+        font-size: 1.3rem;
+        color: #86868b;
+        font-weight: 300;
+        line-height: 1;
+    }
+
+    /* Drawer Footer: Actions & Socials */
+    .drawerFooter {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        padding-top: 1.2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.08);
+        width: 100%;
+    }
+
+    .drawerSearchBtn {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.65rem 1.1rem;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.12);
         border-radius: 980px;
-        background: rgba(41, 151, 255, 0.12);
-        border-color: rgba(41, 151, 255, 0.35);
         color: #f5f5f7;
+        font-size: 0.92rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-sizing: border-box;
     }
 
-    .cmdKbd {
-        display: none;
+    .drawerSearchBtn:active {
+        background: rgba(41, 151, 255, 0.15);
+        border-color: rgba(41, 151, 255, 0.4);
+    }
+
+    .drawerResumeBtn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0.72rem 1rem;
+        background: #0071e3;
+        color: #ffffff;
+        font-size: 0.94rem;
+        font-weight: 600;
+        border-radius: 980px;
+        text-decoration: none;
+        transition: background 0.2s ease;
+        box-sizing: border-box;
+        letter-spacing: -0.01em;
+        box-shadow: 0 4px 14px rgba(0, 113, 227, 0.35);
+    }
+
+    .drawerResumeBtn:active {
+        background: #0077ed;
+        transform: scale(0.98);
+    }
+
+    .drawerSocials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.9rem;
+        margin-top: 0.3rem;
+    }
+
+    .socialIcon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.2s ease;
+    }
+
+    .socialIcon:active {
+        background: rgba(255, 255, 255, 0.15);
+        transform: scale(0.92);
+    }
+
+    .socialIcon img {
+        width: 18px;
+        height: 18px;
+        object-fit: contain;
     }
 }

@@ -65,7 +65,7 @@ export const About = () => {
                         <li><strong>Role:</strong> Applied AI & Software Engineer</li>
                         <li><strong>Focus:</strong> Computer Vision, Core ML, iOS & Full-Stack</li>
                         <li><strong>Base:</strong> Surabaya, Indonesia</li>
-                        <li><strong>Status:</strong> Open to Roles & Freelance Web</li>
+                        <li><strong>Status:</strong> Open to Full-Time Roles (AI / SWE) & Freelance</li>
                     </ul>
                 </motion.div>
 

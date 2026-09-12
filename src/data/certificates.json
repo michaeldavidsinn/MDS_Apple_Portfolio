@@ -8,10 +8,10 @@
       "pdfUrl": "certificates/pdf/cpanel.pdf"
     },
     {
-      "title": "Sertifikat Kompetensi Pemrogram Dasar",
+      "title": "National Competency Certificate: Software Programmer",
       "issuer": "Badan Nasional Sertifikasi Profesi (BNSP)",
       "date": "December 10, 2025",
-      "description": "National competency certification in Information and Communication Technology with a Programmer qualification.",
+      "description": "Official national professional competency certification in Information and Communication Technology, validating industry-standard software programming qualifications.",
       "logoSrc": "certificates/logo/logo_bnsp.png",
       "pdfUrl": "certificates/pdf/bnsp.docx.pdf"
     },
