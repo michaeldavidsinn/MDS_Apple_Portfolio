@@ -119,7 +119,7 @@ export const Hero = () => {
           whileTap={{ scale: 0.97, cursor: "grabbing" }}
         >
           <img
-            src={getImageurl("hero/heroImage.png")}
+            src={getImageurl("hero/mds_face.JPG")}
             alt="Michael David Sin"
             className={styles.heroImg}
             draggable="false" /* Mencegah bug bawaan browser saat mendrag gambar */
